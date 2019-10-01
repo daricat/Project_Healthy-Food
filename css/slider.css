@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.slidershow-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev {
+  background: #ffffff;
+}
+
+/*# sourceMappingURL=slider.css.map */
