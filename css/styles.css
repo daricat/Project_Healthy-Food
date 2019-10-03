@@ -21,8 +21,39 @@ body {
   z-index: 1;
 }
 
-.slide {
-  display: flex;
+.slide1 {
+  background-image: url(../media/1-Promo/slider/1.png);
+  background-size: cover;
+  background-position: center center;
+  height: 1050px;
+}
+
+.slide2 {
+  background-image: url(../media/1-Promo/slider/2.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 1050px;
+}
+
+.slide3 {
+  background-image: url(../media/1-Promo/slider/3.png);
+  background-size: cover;
+  background-position: center center;
+  height: 1050px;
+}
+
+.slide4 {
+  background-image: url(../media/1-Promo/slider/4.png);
+  background-size: cover;
+  background-position: center center;
+  height: 1050px;
+}
+
+.slide5 {
+  background-image: url(../media/1-Promo/slider/5.png);
+  background-size: cover;
+  background-position: center center;
+  height: 1050px;
 }
 
 .mySlides {
