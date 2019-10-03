@@ -21,6 +21,10 @@ body {
   z-index: 1;
 }
 
+.slide {
+  display: flex;
+}
+
 .mySlides {
   display: none;
   position: absolute;
