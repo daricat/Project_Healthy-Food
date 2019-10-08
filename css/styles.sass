@@ -15,50 +15,61 @@ body
     padding: 0
 
 .slidershow-container
-    position: absolute
+    position: relative 
     width: 100%
     z-index: 1
     
-.slide1 
+.slide1
+   
    background-image: url(../media/1-Promo/slider/1.png)
    background-size: cover
-   background-position: center center
-   height: 1050px
-
+   background-position-x: center
+   background-position-y: bottom
+   height: 220vh
+   
+  
 .slide2 
+  
    background-image: url(../media/1-Promo/slider/2.jpg)
    background-size: cover
-   background-position: center center
-   height: 1050px
-    
+   background-position-x: center
+   background-position-y: bottom
+   height: 220vh
+   
+      
 
-.slide3 
+.slide3
+   
    background-image: url(../media/1-Promo/slider/3.png)
    background-size: cover
-   background-position: center center
-   height: 1050px
+   background-position-x: center
+   background-position-y: bottom
+   height: 220vh
+   
   
-
-.slide4 
+  
+.slide4
+  
    background-image: url(../media/1-Promo/slider/4.png)
    background-size: cover
-   background-position: center center
-   height: 1050px
+   background-position-x: center
+   background-position-y: bottom
+   height: 220vh
+   
+   
     
 
-.slide5 
+.slide5
+   
    background-image: url(../media/1-Promo/slider/5.png)
    background-size: cover
-   background-position: center center
-   height: 1050px
-    
-
-
-
-
+   background-position-x: center
+   background-position-y: bottom
+   height: 220vh
+   
+   
 .mySlides
     display: none
-    position: absolute
     z-index: 1
     width: 100%
 
@@ -78,9 +89,7 @@ body
 
 
 .prev
-    position: absolute
-    top: 996px
-    left: 1789px
+    position: relative
     background: #ffffff
     border-radius: 50px 0px 0px 50px
     padding: 3px 10px 3px 10px
@@ -91,9 +100,7 @@ body
     z-index: 2
 
 .next
-    position: absolute
-    top: 996px
-    left: 1825px
+    position: relative
     background: #ffffff
     border-radius: 00px 50px 50px 0px
     padding: 3px 10px 3px 10px
@@ -104,12 +111,14 @@ body
     z-index: 2   
 
 header
-    position: relative
+    position: absolute
+    top: 0px
+    width: 100%
     padding: 28px 0 28px 0
+    margin: 0 auto
     z-index: 2
     
 .container-1
-    position: relative
     max-width: 1800px
     margin: 0 auto
     z-index: 2
@@ -155,11 +164,11 @@ ul
 .icon-menu
     padding: 0 0 0 25px
 
-main
-    position: relative
-    z-index: 2
 
 .promo
+    position: absolute
+    top: 117px
+    width: 100%
     display: flex
     align-items: center
     flex-direction: column
@@ -168,8 +177,8 @@ h1
   flex-direction: column
   align-items: center
   font-family: "Roboto"
-  padding: 217px 0 0 0
-  margin: 0 auto
+  padding: 217px 10px 0 10px
+  margin: 0 auto 80px auto
 
 
 h1 p:nth-child(1) 
@@ -198,8 +207,10 @@ h1 p:nth-child(2)
 //     background-color: #ffffff    
 //     text-decoration: none
 
-.button-download 
-  margin: 81px 0 0 0
+.button-download
+  display: block 
+  margin: 0 auto
+  width: 158px
   background: linear-gradient(to top, #5dc5cf,#a4d2a1)
   border-radius: 26px
   color: #444444
@@ -215,7 +226,23 @@ h1 p:nth-child(2)
   padding: 9px 41px 9px 41px
   border-radius: 26px
 
+.container-2
+    max-width: 1800px
+    margin: 0 auto
 
+.background-second-page
+    background-color: #ffffff   
+    
+.button-download1 
+  margin: 81px 0 0 0
+  background: linear-gradient(to top, #5dc5cf,#a4d2a1)
+  border-radius: 26px
+  color: #444444
+  font-family: "Roboto"
+  font-weight: bold
+  font-size: 16px
+  padding: 5px
+  text-decoration: none
 
 
 // border-image: linear-gradient(360deg, rgba(94,198,206,1) 0%, rgba(165,210,160,1) 100%)
