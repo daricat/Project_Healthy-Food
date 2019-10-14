@@ -221,34 +221,9 @@ h1 p:nth-child(2) {
   border-radius: 26px;
 }
 
-@media only screen and (min-width: 320px) {
-  .menu-group {
-    display: none;
-  }
-}
-@media only screen and (min-width: 480px) {
-  .menu-group {
-    display: none;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .menu-group {
-    display: none;
-  }
-}
 @media only screen and (min-width: 992px) {
-  .menu-group {
-    display: flex;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .menu-group {
-    display: flex;
-  }
-}
-@media only screen and (min-width: 1824px) {
-  .menu-group {
-    display: flex;
+  .menu-grop {
+    display: none;
   }
 }
 .container-2 {
@@ -285,4 +260,4 @@ h1 p:nth-child(2) {
   text-decoration: none;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=ctyles.css.map */
