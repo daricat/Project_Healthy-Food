@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic");
-@font-face {
-  font-family: "Roboto";
-  src: local(Arial);
-  src: url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic");
-}
+@font-face;
 body {
   min-width: 1px;
   margin: 0;
@@ -285,6 +281,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 68px;
+  padding-bottom: 271px;
 }
 
 .tomato {
@@ -299,7 +296,10 @@ body {
   max-width: 270px;
   width: 270px;
   height: 440px;
+  border-radius: 16px;
+  border: solid 3px white;
   background-image: url(../media/2-Section/tommato-pr.png);
+  transition: 0.2s linear;
 }
 
 .option {
@@ -361,6 +361,11 @@ body {
   color: #dedede;
 }
 
+.tomato:hover {
+  box-shadow: 0 0px 38px #75757552;
+  transform: scale(0.99);
+}
+
 .tomato:hover .option {
   display: flex;
   visibility: visible;
@@ -380,7 +385,15 @@ body {
   max-width: 270px;
   width: 270px;
   height: 443px;
+  border-radius: 16px;
+  border: solid 3px white;
+  transition: 0.2s linear;
   background-image: url(../media/2-Section/cabbage-pr.png);
+}
+
+.cabage:hover {
+  box-shadow: 0 0px 38px #75757552;
+  transform: scale(0.99);
 }
 
 .cabage:hover .option {
@@ -402,7 +415,14 @@ body {
   max-width: 270px;
   width: 270px;
   height: 443px;
+  border-radius: 16px;
+  transition: 0.2s linear;
   background-image: url(../media/2-Section/cherry-pr.png);
+}
+
+.cherry:hover {
+  box-shadow: 0 0px 38px #75757552;
+  transform: scale(0.99);
 }
 
 .cherry:hover .option {
@@ -424,7 +444,15 @@ body {
   max-width: 270px;
   width: 270px;
   height: 443px;
+  border-radius: 16px;
+  border: solid 3px white;
+  transition: 0.2s linear;
   background-image: url(../media/2-Section/asparagus-pr.png);
+}
+
+.asparagus:hover {
+  box-shadow: 0 0px 38px #75757552;
+  transform: scale(0.99);
 }
 
 .asparagus:hover .option {
@@ -446,7 +474,15 @@ body {
   max-width: 270px;
   width: 270px;
   height: 443px;
+  border-radius: 16px;
+  border: solid 3px white;
+  transition: 0.2s linear;
   background-image: url(../media/2-Section/pineapple-pr.png);
+}
+
+.pineapple:hover {
+  box-shadow: 0 0px 38px #75757552;
+  transform: scale(0.99);
 }
 
 .pineapple:hover .option {
@@ -468,7 +504,15 @@ body {
   max-width: 270px;
   width: 270px;
   height: 443px;
+  border-radius: 16px;
+  border: solid 3px white;
+  transition: 0.2s linear;
   background-image: url(../media/2-Section/onion-pr.png);
+}
+
+.onion:hover {
+  box-shadow: 0 0px 38px #75757552;
+  transform: scale(0.99);
 }
 
 .onion:hover .option {
@@ -495,6 +539,140 @@ body {
   color: #7fba00;
   margin: 0 auto;
   padding: 8px 0 45px 0;
+}
+
+.container2 {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.company_position {
+  background-image: url(../media/3-Text/bg.webp);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: bottom;
+}
+
+.company__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 93px 3px 0 3px;
+}
+
+.title-logo {
+  margin: 25px 0 0 31px;
+}
+
+.title-first-line {
+  margin: 0 auto;
+  margin-bottom: 16px;
+  font-family: "Roboto";
+  font-size: 40px;
+  font-weight: 100;
+  color: #525252;
+}
+
+.title-first-line_span {
+  font-weight: 600;
+}
+
+.title-second-line {
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 12px;
+  color: #525252;
+  letter-spacing: 5px;
+}
+
+.company__description {
+  text-align: center;
+  max-width: 878px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0 3px 0 3px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #525252;
+}
+
+.company__plus {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 80px 0 410px 0;
+  height: 377px;
+}
+
+.plus__naturix {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.plus__logo {
+  margin: 0 auto;
+  margin-bottom: 28px;
+}
+
+.plus__title {
+  margin: 0;
+  margin-bottom: 28px;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  color: #525252;
+}
+
+.plus__text {
+  max-width: 271px;
+  margin: 0;
+  margin-bottom: 28px;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 14px;
+  color: #525252;
+}
+
+.plus__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 3px 0 3px;
+  height: 40px;
+  width: 127px;
+  border-radius: 26px;
+  background: #ffffff;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 500;
+  color: #525252;
+  text-decoration: none;
+}
+
+.plus__organic {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.plus__quality {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.plus__natural {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic')
 
-@font-face 
-    font-family: "Roboto"
-    src: local(Arial)
-    src: url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic')
+@font-face
+font-family:Roboto
+src:local(Arial)
+src:url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic')
 
 body
     min-width: 1px
@@ -30,45 +30,45 @@ body
     height: 1080px
     width: 100%
 
-.slides    
+.slides
     display: none
     z-index: 1
     width: 100%
 
-.slides_slide1   
-   background-image: url(../media/1-Promo/slider/1.png)
-   background-size: cover
-   background-position-x: center
-   background-position-y: bottom
-   height: 1080px
-   
-.slides_slide2  
-   background-image: url(../media/1-Promo/slider/2.jpg)
-   background-size: cover
-   background-position-x: center
-   background-position-y: bottom
-   height: 1080px
-  
-.slides_slide3   
-   background-image: url(../media/1-Promo/slider/3.png)
-   background-size: cover
-   background-position-x: center
-   background-position-y: bottom
-   height: 1080px
-  
-.slides_slide4  
-   background-image: url(../media/1-Promo/slider/4.png)
-   background-size: cover
-   background-position-x: center
-   background-position-y: bottom
-   height: 1080px
-   
+.slides_slide1
+    background-image: url(../media/1-Promo/slider/1.png)
+    background-size: cover
+    background-position-x: center
+    background-position-y: bottom
+    height: 1080px
+
+.slides_slide2
+    background-image: url(../media/1-Promo/slider/2.jpg)
+    background-size: cover
+    background-position-x: center
+    background-position-y: bottom
+    height: 1080px
+
+.slides_slide3
+    background-image: url(../media/1-Promo/slider/3.png)
+    background-size: cover
+    background-position-x: center
+    background-position-y: bottom
+    height: 1080px
+
+.slides_slide4
+    background-image: url(../media/1-Promo/slider/4.png)
+    background-size: cover
+    background-position-x: center
+    background-position-y: bottom
+    height: 1080px
+
 .slides_slide5
-   background-image: url(../media/1-Promo/slider/5.png)
-   background-size: cover
-   background-position-x: center
-   background-position-y: bottom
-   height: 1080px    
+    background-image: url(../media/1-Promo/slider/5.png)
+    background-size: cover
+    background-position-x: center
+    background-position-y: bottom
+    height: 1080px
 
 .header
     max-width: 1800px
@@ -139,10 +139,10 @@ body
     font-size: 15px
     font-weight: 500
     text-transform: uppercase
-    letter-spacing: 0.2em    
+    letter-spacing: 0.2em
 
 .container__a
-    display: block 
+    display: block
     margin: 0 auto
     margin-bottom: 400px
     width: 158px
@@ -159,14 +159,13 @@ body
     background: #fff
     display: block
     padding: 9px 41px 9px 41px
-    border-radius: 26px        
+    border-radius: 26px
 
 .slide-nav
     display: flex
     flex-direction: row
     float: right
     margin-bottom: 60px
-
 
 .slide-nav__numbertext
     font-family: 'Roboto'
@@ -177,7 +176,7 @@ body
     font-family: 'Roboto'
     font-size: 25px
     font-weight: bold
-    color: #78b000 
+    color: #78b000
 
 .prev
     height: 16px
@@ -195,16 +194,16 @@ body
     background: #ffffff
     border-radius: 00px 50px 50px 0px
     padding: 3px 10px 3px 10px
-    border-left: #9f9f9f solid 1px 
+    border-left: #9f9f9f solid 1px
     font-size: 16px
     color: #9f9f9f
-    cursor: pointer 
-    z-index: 2       
+    cursor: pointer
+    z-index: 2
 
-// Page 2
+// PAGE 2
 
 .section-fruits
-    clear: both    
+    clear: both
 
 .filter-fruits
     display: flex
@@ -224,7 +223,7 @@ body
     width: 180px
     border: solid 2px
     border-color: #d8d8d7
-    border-radius: 26px  
+    border-radius: 26px
     background: #ffffff
     font-family: 'Roboto'
     font-size: 16px
@@ -239,7 +238,7 @@ body
     border-color: #81ba00
     box-shadow: 0 11px 28px #75757547
     transform: scale(1.05)
-    
+
 .button-fruits__word
     font-family: 'Roboto'
     font-weight: bold
@@ -247,13 +246,14 @@ body
 
 .filter-fruits__img
     margin-top: 30px
-    
+
 .product_position
     display: flex
     flex-direction: row
     justify-content: space-between
     align-items: center
     margin-top: 68px
+    padding-bottom: 271px
 
 .tomato
     display: flex
@@ -266,72 +266,76 @@ body
     max-width: 270px
     width: 270px
     height: 440px
+    border-radius: 16px
+    border: solid 3px white
     background-image: url(../media/2-Section/tommato-pr.png)
+    transition: 0.2s linear
+  
 
 // Tool bar
 
-.option 
-  display: flex
-  position: absolute
-  top: 41px
-  left: 41px
-  flex-direction: row
-  border-radius: 26px 26px 26px 26px
-  visibility: hidden
-  opacity: 0
-  transition:  0.2s linear
-    
-.favorites 
-  display: flex
-  justify-content: center
-  align-items: center
-  margin: 0 1px 0 0
-  width: 60px
-  height: 45px
-  border-radius: 26px 0 0px 26px
-  background-color: #ffffff
-  text-decoration: none
+.option
+    display: flex
+    position: absolute
+    top: 41px
+    left: 41px
+    flex-direction: row
+    border-radius: 26px 26px 26px 26px
+    visibility: hidden
+    opacity: 0
+    transition: 0.2s linear
+
+.favorites
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 1px 0 0
+    width: 60px
+    height: 45px
+    border-radius: 26px 0 0px 26px
+    background-color: #ffffff
+    text-decoration: none
 
 .fa-heart
-  color: #dedede
-   
-.basket 
-  display: flex
-  justify-content: center
-  align-items: center
-  margin: 0 1px 0 1px
-  width: 61px
-  height: 45px
-  background-color: #ffffff
-  text-decoration: none
+    color: #dedede
+
+.basket
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 1px 0 1px
+    width: 61px
+    height: 45px
+    background-color: #ffffff
+    text-decoration: none
 
 .fa-shopping-basket
-  color: #dedede
-    
-.open 
-  display: flex
-  justify-content: center
-  align-items: center
-  margin: 0 0 0 1px
-  width: 61px
-  height: 45px
-  border-radius: 0px 26px 26px 0px
-  background-color: #ffffff
-  text-decoration: none
+    color: #dedede
+
+.open
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 0 0 1px
+    width: 61px
+    height: 45px
+    border-radius: 0px 26px 26px 0px
+    background-color: #ffffff
+    text-decoration: none
 
 .fa-arrows-alt
-  color: #dedede
+    color: #dedede
+
+.tomato:hover  
+    box-shadow: 0 0px 38px #75757552
+    transform: scale(0.99)
+   
 
 .tomato:hover .option
     display: flex
     visibility: visible
     opacity: 1
     box-shadow: 0 19px 39px #75757547
-    
-    
-    
-
-
 
 // Cabage-product
 
@@ -346,7 +350,14 @@ body
     max-width: 270px
     width: 270px
     height: 443px
+    border-radius: 16px
+    border: solid 3px white
+    transition: 0.2s linear
     background-image: url(../media/2-Section/cabbage-pr.png)
+
+.cabage:hover  
+    box-shadow: 0 0px 38px #75757552
+    transform: scale(0.99)
 
 .cabage:hover .option
     display: flex
@@ -362,12 +373,18 @@ body
     flex-direction: column
     justify-content: center
     align-items: flex-end
-    
+
 .cherry_position
     max-width: 270px
     width: 270px
     height: 443px
-    background-image: url(../media/2-Section/cherry-pr.png)    
+    border-radius: 16px
+    transition: 0.2s linear
+    background-image: url(../media/2-Section/cherry-pr.png)
+
+.cherry:hover  
+    box-shadow: 0 0px 38px #75757552
+    transform: scale(0.99)
 
 .cherry:hover .option
     display: flex
@@ -388,7 +405,15 @@ body
     max-width: 270px
     width: 270px
     height: 443px
-    background-image: url(../media/2-Section/asparagus-pr.png)   
+    border-radius: 16px
+    border: solid 3px white
+    transition: 0.2s linear
+    background-image: url(../media/2-Section/asparagus-pr.png)
+
+.asparagus:hover  
+    box-shadow: 0 0px 38px #75757552
+    transform: scale(0.99)
+
 
 .asparagus:hover .option
     display: flex
@@ -396,7 +421,7 @@ body
     opacity: 1
     box-shadow: 0 19px 39px #75757547
 
-// Pineapple-producr    
+// Pineapple-producr
 
 .pineapple
     display: flex
@@ -409,7 +434,14 @@ body
     max-width: 270px
     width: 270px
     height: 443px
+    border-radius: 16px
+    border: solid 3px white
+    transition: 0.2s linear
     background-image: url(../media/2-Section/pineapple-pr.png)
+
+.pineapple:hover  
+    box-shadow: 0 0px 38px #75757552
+    transform: scale(0.99)
 
 .pineapple:hover .option
     display: flex
@@ -430,7 +462,14 @@ body
     max-width: 270px
     width: 270px
     height: 443px
-    background-image: url(../media/2-Section/onion-pr.png)    
+    border-radius: 16px
+    border: solid 3px white
+    transition: 0.2s linear
+    background-image: url(../media/2-Section/onion-pr.png)
+
+.onion:hover  
+    box-shadow: 0 0px 38px #75757552
+    transform: scale(0.99)
 
 .onion:hover .option
     display: flex
@@ -454,9 +493,129 @@ body
     color: #7fba00
     margin: 0 auto
     padding: 8px 0 45px 0
-    
-// border-image: linear-gradient(360deg, rgba(94,198,206,1) 0%, rgba(165,210,160,1) 100%)
-    // border-image-slice: 1
 
 
+// Page 3
+
+.container2
+    max-width: 1170px
+    margin: 0 auto
+
+.company_position
+    background-image: url(../media/3-Text/bg.webp)
+    background-size: cover
+    background-position-x: center
+    background-position-y: bottom
+  
+       
+.company__title
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin: 0
+    padding: 93px 3px 0 3px
+
+.title-logo
+    margin: 25px 0 0 31px
+
+.title-first-line
+    margin: 0 auto
+    margin-bottom: 16px
+    font-family: 'Roboto'
+    font-size: 40px
+    font-weight: 100
+    color: #525252
+
+.title-first-line_span
+    font-weight: 600
+
+.title-second-line
+    margin: 0
+    font-family: 'Roboto'
+    font-size: 12px 
+    color: #525252
+    letter-spacing: 5px
+          
+.company__description
+    text-align: center
+    max-width: 878px
+    margin: 0 auto
+    margin-top: 50px
+    padding: 0 3px 0 3px
+    font-family: 'Roboto'
+    font-size: 16px
+    font-weight: 400
+    line-height: 1.5
+    color: #525252 
+
+.company__plus
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding: 80px 0 410px 0
+    height: 377px
     
+
+.plus__naturix
+    display: flex
+    flex-direction: column
+    align-self: flex-end
+    
+
+.plus__logo
+    margin: 0 auto
+    margin-bottom: 28px
+
+.plus__title
+    margin: 0
+    margin-bottom: 28px
+    text-align: center
+    font-family: 'Roboto'
+    font-size: 18px
+    font-weight: 400
+    color: #525252
+
+.plus__text
+    max-width: 271px
+    margin: 0
+    margin-bottom: 28px
+    text-align: center
+    font-family: 'Roboto'
+    font-size: 14px
+    color: #525252
+
+.plus__button
+    display: flex
+    align-items: center
+    justify-content: center
+    box-sizing: border-box
+    margin: 0 auto
+    padding: 0 3px 0 3px
+    height: 40px
+    width: 127px
+    border-radius: 26px
+    background: #ffffff
+    font-family: 'Roboto'
+    font-size: 12px
+    font-weight: 500
+    color: #525252
+    text-decoration: none
+    
+.plus__organic
+    display: flex
+    flex-direction: column
+    align-self: flex-start
+    
+
+.plus__quality
+    display: flex
+    flex-direction: column
+    align-self: flex-start
+    
+.plus__natural
+    display: flex
+    flex-direction: column
+    align-self: flex-end
+           
+// Page 4
