@@ -244,6 +244,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
   margin: 0 3px 32px 3px;
   padding: 0 3px 0 3px;
   height: 41px;
@@ -256,6 +257,7 @@ body {
   font-size: 16px;
   color: #9f9e9c;
   text-decoration: none;
+  transition: 0.2s linear;
 }
 
 .button-fruits:hover {
@@ -263,6 +265,8 @@ body {
   color: #ffffff;
   border: solid 2px;
   border-color: #81ba00;
+  box-shadow: 0 11px 28px #75757547;
+  transform: scale(1.05);
 }
 
 .button-fruits__word {
@@ -273,6 +277,224 @@ body {
 
 .filter-fruits__img {
   margin-top: 30px;
+}
+
+.product_position {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 68px;
+}
+
+.tomato {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.tomato_position {
+  max-width: 270px;
+  width: 270px;
+  height: 440px;
+  background-image: url(../media/2-Section/tommato-pr.png);
+}
+
+.option {
+  display: flex;
+  position: absolute;
+  top: 41px;
+  left: 41px;
+  flex-direction: row;
+  border-radius: 26px 26px 26px 26px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s linear;
+}
+
+.favorites {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1px 0 0;
+  width: 60px;
+  height: 45px;
+  border-radius: 26px 0 0px 26px;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.fa-heart {
+  color: #dedede;
+}
+
+.basket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1px 0 1px;
+  width: 61px;
+  height: 45px;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.fa-shopping-basket {
+  color: #dedede;
+}
+
+.open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 1px;
+  width: 61px;
+  height: 45px;
+  border-radius: 0px 26px 26px 0px;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.fa-arrows-alt {
+  color: #dedede;
+}
+
+.tomato:hover .option {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  box-shadow: 0 19px 39px #75757547;
+}
+
+.cabage {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.cabage_position {
+  max-width: 270px;
+  width: 270px;
+  height: 443px;
+  background-image: url(../media/2-Section/cabbage-pr.png);
+}
+
+.cabage:hover .option {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  box-shadow: 0 19px 39px #75757547;
+}
+
+.cherry {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.cherry_position {
+  max-width: 270px;
+  width: 270px;
+  height: 443px;
+  background-image: url(../media/2-Section/cherry-pr.png);
+}
+
+.cherry:hover .option {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  box-shadow: 0 19px 39px #75757547;
+}
+
+.asparagus {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.asparagus_position {
+  max-width: 270px;
+  width: 270px;
+  height: 443px;
+  background-image: url(../media/2-Section/asparagus-pr.png);
+}
+
+.asparagus:hover .option {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  box-shadow: 0 19px 39px #75757547;
+}
+
+.pineapple {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.pineapple_position {
+  max-width: 270px;
+  width: 270px;
+  height: 443px;
+  background-image: url(../media/2-Section/pineapple-pr.png);
+}
+
+.pineapple:hover .option {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  box-shadow: 0 19px 39px #75757547;
+}
+
+.onion {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.onion_position {
+  max-width: 270px;
+  width: 270px;
+  height: 443px;
+  background-image: url(../media/2-Section/onion-pr.png);
+}
+
+.onion:hover .option {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  box-shadow: 0 19px 39px #75757547;
+}
+
+.product__text-first {
+  display: block;
+  font-family: "Roboto";
+  font-size: 20px;
+  margin: 0 auto;
+  margin-top: auto;
+  padding: 25px 0 0 0;
+}
+
+.product__text-second {
+  display: block;
+  font-family: "Helvetica";
+  font-size: 14px;
+  font-weight: 600;
+  color: #7fba00;
+  margin: 0 auto;
+  padding: 8px 0 45px 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
