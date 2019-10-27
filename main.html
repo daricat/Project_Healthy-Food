@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="./css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="./fonts/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick-1.8.1/slick/slick.css">
+    <link href="./css/styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,54 +22,74 @@
             <div class="slides slides_slide4"></div>
             <div class="slides slides_slide5"></div>
         </div>
-        <header class="header">
-            <div class="header-position">
-                <a href="./bem.html" class="logo logo-position">
-                    <img src="./media/1-Promo/logo.png" />
+
+        <div class="container">
+
+            <header class="header">
+                <div class="header-position">
+                    <a href="./bem.html" class="logo logo-position">
+                        <img src="./media/1-Promo/logo.png" />
+                    </a>
+
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__a" href="#">HOME</a>
+                                <p class="documents__circle"></p>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__a" href="#">ABOUT US</a>
+                                <p class="documents__circle"></p>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__a" href="#">SHOP</a>
+                                <p class="documents__circle"></p>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__a" href="#">BLOG</a>
+                                <p class="documents__circle"></p>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__a" href="#">CONTACT US</a>
+                                <p class="documents__circle"></p>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#">
+                                    <img src="media/1-Promo/basket.png">
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#">
+                                    <img src="media/1-Promo/menu.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="section__content container">
+                <h1 class="title title-position container">
+                    <p class="title__p-first-line">Free Download <span class="title__span">Healthy PSD</span></p>
+                    <p class="title__p-second-line">organic fruits, vegetables, and lot more to your door</p>
+                </h1>
+
+                <a href="#" class="container__a">
+                    <span class="container_a">Download</span>
                 </a>
 
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a class="nav__a" href="#">HOME</a></li>
-                        <li class="nav__item"><a class="nav__a" href="#">ABOUT US</a></li>
-                        <li class="nav__item"><a class="nav__a" href="#">SHOP</a></li>
-                        <li class="nav__item"><a class="nav__a" href="#">BLOG</a></li>
-                        <li class="nav__item"><a class="nav__a" href="#">CONTACT US</a></li>
-                        <li class="nav__item">
-                            <a href="#">
-                                <img src="media/1-Promo/basket.png">
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#">
-                                <img src="media/1-Promo/menu.png">
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+                <div class="slide-nav">
+                    <div class="slide-nav__numbertext"><span class="slide-nav__numbertext_span">01</span>/05</div>
+                    <!-- <div class="slide-nav__numbertext"><span class="slide-nav__numbertext_span">02</span>/05</div>
+                    <div class="slide-nav__numbertext"><span class="slide-nav__numbertext_span">03</span>/05</div>
+                    <div class="slide-nav__numbertext"><span class="slide-nav__numbertext_span">04</span>/05</div>
+                    <div class="slide-nav__numbertext"><span class="slide-nav__numbertext_span">05</span>/05</div>  -->
 
-        <div class="section__content container">
-            <h1 class="title title-position container">
-                <p class="title__p-first-line">Free Download <span class="title__span">Healthy PSD</span></p>
-                <p class="title__p-second-line">organic fruits, vegetables, and lot more to your door</p>
-            </h1>
-
-            <a href="#" class="container__a"><span class="container_a">Download</span></a>
-
-            <div class="slide-nav">
-                <div class="slide-nav__numbertext"><span class="slide-nav__numbertext_span">01</span>/05</div>
-                <!-- <div class="slide-nav__numbertext"><span class="slide-nav__numbertext_span">02</span>/05</div>
-                <div class="slide-nav__numbertext"><span class="slide-nav__numbertext_span">03</span>/05</div>
-                <div class="slide-nav__numbertext"><span class="slide-nav__numbertext_span">04</span>/05</div>
-                <div class="slide-nav__numbertext"><span class="slide-nav__numbertext_span">05</span>/05</div>  -->
-
-                <a class="prev" onclick="plusSlides(-1)">&#x2190;</a>
-                <a class="next" onclick="plusSlides(1)">&#x2192;</a>
+                    <a class="prev" onclick="plusSlides(-1)">&#x2190;</a>
+                    <a class="next" onclick="plusSlides(1)">&#x2192;</a>
+                </div>
             </div>
         </div>
-
     </section>
 
     <!-- Page 2 -->
@@ -78,25 +97,26 @@
 
         <ul class="filter-fruits">
             <li>
-                <a href="./main.html" class="button-fruits">organic<span class="button-fruits__word"> fruits</span></a>
+                <button class="button-fruits" value="b-fruits">organic<strong> fruits</strong></button>
             </li>
             <li>
-                <a href="./main.html" class="button-fruits">organic<span class="button-fruits__word">
-                        vegetables</span></a>
+                <button class="button-fruits" value="b-veget">organic<strong>
+                        vegetables</strong></button>
             </li>
             <li>
                 <img src="./media/2-Section/logo.png" class="filter-fruits__img" />
             </li>
             <li>
-                <a href="./main.html" class="button-fruits">organic<span class="button-fruits__word"> juices</span></a>
+                <button class="button-fruits" value="b-juices">organic<strong> juices</strong></button>
             </li>
             <li>
-                <a href="./main.html" class="button-fruits">dried<span class="button-fruits__word"> fruits</span></a>
+                <button class="button-fruits" value="b-dried">organic <strong>dried
+                        fruits</strong></button>
             </li>
         </ul>
 
         <ul class="product">
-            <li class="product__background product_position">
+            <li class="product__background product_position b-veget">
                 <img src="./media/2-Section/tomato.png" alt="" class="product__logo">
                 <span class="product__text-first">organic <strong>tomato</strong></span>
                 <span class="product__text-second">$50.00</span>
@@ -106,8 +126,8 @@
                     <a href="./main.html" class="open"><i class="fa fa-arrows-alt"></i></a>
                 </div>
             </li>
-            <li class="product__background product_position">
-                <img src="./media/2-Section/cabbage.png" alt="" class="product__logo">
+            <li class="product__background product_position b-veget">
+                <img src="./media/2-Section/cabbage.png" alt="" class="product__logo veget">
                 <span class="product__text-first">organic <strong>cabage</strong></span>
                 <span class="product__text-second">$50.00</span>
                 <div class="option">
@@ -117,7 +137,7 @@
                 </div>
             </li>
             <li class="product__background product_position">
-                <img src="./media/2-Section/cherry.png" alt="" class="product__logo">
+                <img src="./media/2-Section/cherry.png" alt="" class="product__logo fruits">
                 <span class="product__text-first">organic <strong>cherry</strong></span>
                 <span class="product__text-second">$50.00</span>
                 <div class="option">
@@ -127,7 +147,7 @@
                 </div>
             </li>
             <li class="product__background product_position">
-                <img src="./media/2-Section/asparagus.png" alt="" class="product__logo">
+                <img src="./media/2-Section/asparagus.png" alt="" class="product__logo veget">
                 <span class="product__text-first">organic <strong>asparagus</strong></span>
                 <span class="product__text-second">$50.00</span>
                 <div class="option">
@@ -137,8 +157,8 @@
                 </div>
             </li>
             <li class="product__background product_position">
-                <img src="./media/2-Section/pineapple.png" alt="" class="product__logo">
-                <span class="product product__text-first">organic <strong>pineapple</strong></span>
+                <img src="./media/2-Section/pineapple.png" alt="" class="product__logo fruits">
+                <span class="product__text-first">organic <strong>pineapple</strong></span>
                 <span class="product__text-second">$50.00</span>
                 <div class="option">
                     <a href="./main.html" class="favorites"><i class="fa fa-heart"></i></a>
@@ -147,7 +167,7 @@
                 </div>
             </li>
             <li class="product__background product_position">
-                <img src="./media/2-Section/onion.png" alt="" class="product__logo">
+                <img src="./media/2-Section/onion.png" alt="" class="product__logo veget">
                 <span class="product__text-first">organic <strong>onion</strong></span>
                 <span class="product__text-second">$50.00</span>
                 <div class="option">
@@ -293,6 +313,139 @@
         </div>
     </section>
 
+    <!-- Page 5 -->
+    <section class="naturix">
+        <div class="container2">
+            <!-- Title -->
+            <ul class="naturix-title">
+                <li>
+                    <p class="naturix-title__first-line">
+                        FRESH FROM OUR FARM
+                    </p>
+                </li>
+                <p class="naturix-title__line"></p>                
+                <li>
+                    <img src="./media/3-Text/h2-logo.png" alt="logo" class="naturix-title__logo" />
+                    <h2 class="naturix-title__second-line">
+                        naturix organic <strong>goods</strong>
+                    </h2>                    
+                </li>
+            </ul>
+
+            <!-- Button filter -->
+            <ul class="naturix-filter">
+                <li>
+                    <button href="./main.html" class="naturix-filter__button">all <strong>goods</strong></button>
+                </li>
+                <li>
+                    <button href="./main.html" class="naturix-filter__button">organic
+                        <strong>vegetables</strong></button>
+                </li>
+                <li>
+                    <button href="./main.html" class="naturix-filter__button">organic <strong>fruits</strong></button>
+                </li>
+                <li>
+                    <button href="./main.html" class="naturix-filter__button">organic <strong>tea</strong></button>
+                </li>
+                <li>
+                    <button href="./main.html" class="naturix-filter__button">all <strong> breads</strong></button>
+                </li>
+                <li>
+                    <button href="./main.html" class="naturix-filter__button">organic <strong>juices</strong></button>
+                </li>
+            </ul>
+
+            <!-- Product -->
+            <ul class="naturix-product">
+                <ul class="product__naturix">
+                    <li class="product__background product_position">
+                        <img src="./media/2-Section/tomato.png" alt="" class="product__logo">
+                        <span class="product__text-first">organic <strong>tomato</strong></span>
+                        <span class="product__text-second">$50.00</span>
+                        <div class="option">
+                            <a href="./main.html" class="favorites"><i class="fa fa-heart"></i></a>
+                            <a href="./main.html" class="basket"><i class="fa fa-shopping-basket"></i></a>
+                            <a href="./main.html" class="open"><i class="fa fa-arrows-alt"></i></a>
+                        </div>
+                    </li>
+                    <li class="product__background product_position">
+                        <img src="./media/2-Section/cabbage.png" alt="" class="product__logo">
+                        <span class="product__text-first">organic <strong>cabage</strong></span>
+                        <span class="product__text-second">$50.00</span>
+                        <div class="option">
+                            <a href="./main.html" class="favorites"><i class="fa fa-heart"></i></a>
+                            <a href="./main.html" class="basket"><i class="fa fa-shopping-basket"></i></a>
+                            <a href="./main.html" class="open"><i class="fa fa-arrows-alt"></i></a>
+                        </div>
+                    </li>
+                    <li class="product__background product_position">
+                        <img src="./media/2-Section/cherry.png" alt="" class="product__logo">
+                        <span class="product__text-first">organic <strong>cherry</strong></span>
+                        <span class="product__text-second">$50.00</span>
+                        <div class="option">
+                            <a href="./main.html" class="favorites"><i class="fa fa-heart"></i></a>
+                            <a href="./main.html" class="basket"><i class="fa fa-shopping-basket"></i></a>
+                            <a href="./main.html" class="open"><i class="fa fa-arrows-alt"></i></a>
+                        </div>
+                    </li>
+                    <li class="product__background product_position">
+                        <img src="./media/2-Section/asparagus.png" alt="" class="product__logo">
+                        <span class="product__text-first">organic <strong>asparagus</strong></span>
+                        <span class="product__text-second">$50.00</span>
+                        <div class="option">
+                            <a href="./main.html" class="favorites"><i class="fa fa-heart"></i></a>
+                            <a href="./main.html" class="basket"><i class="fa fa-shopping-basket"></i></a>
+                            <a href="./main.html" class="open"><i class="fa fa-arrows-alt"></i></a>
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="product__naturix">
+                    <li class="product__background product_position">
+                        <img src="./media/2-Section/tomato.png" alt="" class="product__logo">
+                        <span class="product__text-first">organic <strong>tomato</strong></span>
+                        <span class="product__text-second">$50.00</span>
+                        <div class="option">
+                            <a href="./main.html" class="favorites"><i class="fa fa-heart"></i></a>
+                            <a href="./main.html" class="basket"><i class="fa fa-shopping-basket"></i></a>
+                            <a href="./main.html" class="open"><i class="fa fa-arrows-alt"></i></a>
+                        </div>
+                    </li>
+                    <li class="product__background product_position">
+                        <img src="./media/2-Section/cabbage.png" alt="" class="product__logo">
+                        <span class="product__text-first">organic <strong>cabage</strong></span>
+                        <span class="product__text-second">$50.00</span>
+                        <div class="option">
+                            <a href="./main.html" class="favorites"><i class="fa fa-heart"></i></a>
+                            <a href="./main.html" class="basket"><i class="fa fa-shopping-basket"></i></a>
+                            <a href="./main.html" class="open"><i class="fa fa-arrows-alt"></i></a>
+                        </div>
+                    </li>
+                    <li class="product__background product_position">
+                        <img src="./media/2-Section/cherry.png" alt="" class="product__logo">
+                        <span class="product__text-first">organic <strong>cherry</strong></span>
+                        <span class="product__text-second">$50.00</span>
+                        <div class="option">
+                            <a href="./main.html" class="favorites"><i class="fa fa-heart"></i></a>
+                            <a href="./main.html" class="basket"><i class="fa fa-shopping-basket"></i></a>
+                            <a href="./main.html" class="open"><i class="fa fa-arrows-alt"></i></a>
+                        </div>
+                    </li>
+                    <li class="product__background product_position">
+                        <img src="./media/2-Section/asparagus.png" alt="" class="product__logo">
+                        <span class="product__text-first">organic <strong>asparagus</strong></span>
+                        <span class="product__text-second">$50.00</span>
+                        <div class="option">
+                            <a href="./main.html" class="favorites"><i class="fa fa-heart"></i></a>
+                            <a href="./main.html" class="basket"><i class="fa fa-shopping-basket"></i></a>
+                            <a href="./main.html" class="open"><i class="fa fa-arrows-alt"></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </section>
+
     <!-- Page 6 -->
     <section class="dealday">
         <div class="container2">
@@ -337,7 +490,7 @@
                 </li>
             </ul>
 
-            <div class="sale-products multiple-items">
+            <div class="sale-products autoplay">
                 <div class="sale-product__bar">
                     <div class="bar__nav">
                         <a href="./main.html" class="nav__favorites"><i class="fa fa-heart"></i></a>
@@ -394,7 +547,7 @@
 
 
                 </div>
-                <!-- <div class="sale-product__bar">
+                <div class="sale-product__bar">
                     <div class="bar__nav">
                         <a href="./main.html" class="nav__favorites"><i class="fa fa-heart"></i></a>
                         <a href="./main.html" class="nav__basket"><i class="fa fa-shopping-basket"></i></a>
@@ -416,7 +569,7 @@
                                 <p class="mark__new">NEW</p>
                                 <p class="mark__sale">SALE</p>
                             </div>
-                            <img src="./media/5-DailyDeal/tomato.jpg" alt="product" class="img__logo">
+                            <img src="./media/5-DailyDeal/asparagus.jpg" alt="product" class="img__logo">
                         </div>
                     </div>
 
@@ -444,7 +597,7 @@
                                 <p class="mark__new">NEW</p>
                                 <p class="mark__sale">SALE</p>
                             </div>
-                            <img src="./media/5-DailyDeal/cabbage.jpg" alt="product" class="img__logo">
+                            <img src="./media/5-DailyDeal/onion.jpg" alt="product" class="img__logo">
                         </div>
                     </div>
 
@@ -472,7 +625,7 @@
                                 <p class="mark__new">NEW</p>
                                 <p class="mark__sale">SALE</p>
                             </div>
-                            <img src="./media/5-DailyDeal/cabbage.jpg" alt="product" class="img__logo">
+                            <img src="./media/5-DailyDeal/pineapple.jpg" alt="product" class="img__logo">
                         </div>
                     </div>
                 </div>
@@ -498,13 +651,14 @@
                                 <p class="mark__new">NEW</p>
                                 <p class="mark__sale">SALE</p>
                             </div>
-                            <img src="./media/5-DailyDeal/cabbage.jpg" alt="product" class="img__logo">
+                            <img src="./media/5-DailyDeal/cherry.jpg" alt="product" class="img__logo">
                         </div>
                     </div>
 
 
-                </div> -->
+                </div>
             </div>
+
         </div>
     </section>
 
@@ -677,6 +831,7 @@
     <!-- Page 8 -->
     <section class="reviews">
         <div class="container2">
+            <!-- Form -->
             <div class="reviews__subscribe">
                 <h2 class="reviews__title">
                     <span class="title__first">JOIN OUR NEWSLETTER</span>
@@ -688,7 +843,26 @@
                 </form>
             </div>
 
-            <ul class="comment">
+            <!-- Reviews -->
+            <ul class="comment review">
+                <li class="comment__first">
+                    <img src="./media/8/people.png" alt="people" class="comment__photo">
+                    <div class="comment__block">
+                        <p class="comment__text">"Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Ut voluptatum quam saepe id molestias perspiciatis illo corporis."
+                        </p>
+                        <span class="comment__author">LUIS GARCHIA</span>
+                    </div>
+                </li>
+                <li class="comment__first">
+                    <img src="./media/8/people.png" alt="people" class="comment__photo">
+                    <div class="comment__block">
+                        <p class="comment__text">"Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Ut voluptatum quam saepe id molestias perspiciatis illo corporis."
+                        </p>
+                        <span class="comment__author">LUIS GARCHIA</span>
+                    </div>
+                </li>
                 <li class="comment__first">
                     <img src="./media/8/people.png" alt="people" class="comment__photo">
                     <div class="comment__block">
@@ -708,20 +882,245 @@
                     </div>
                 </li>
             </ul>
+
+            <div class="comment__nav">
+                <div class="second-line__arrows">
+                    <button class="second-line__arrow-left slick-prev">&#x2190;</button>
+                    <button class="second-line__arrow-right slick-next">&#x2192;</button>
+                </div>
+                <p class="comment__line"></p>
+            </div>
+
+            <!-- Blog title -->
+            <h2 class="blog-title">
+                <p class="blog-title__first-line">NATURIX BLOG</p>
+                <p class="blog-title__second-line">naturix <strong>latest news</strong></p>
+            </h2>
+
+            <!-- Blog post -->
+            <ul class="blog-post">
+                <li class="post">
+                    <p class="post__photo-before">
+                        <img src="./media/8/1_cr.jpg" alt="photo" class="post__photo">
+                    </p>
+                    <div class="post__description">
+                        <p class="post__date">26 june 2016</p>
+                        <h3 class="post__title">5 best foods to make you</h3>
+                        <span class="post__teg">fresh&health</span>
+                        <p class="post__line"></p>
+                        <p class="post__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                        </p>
+                        <a href="./main.html" class="post__link">read article &#x2192;</a>
+                    </div>
+                </li>
+
+                <li class="post">
+                    <p class="post__photo-before">
+                        <img src="./media/8/2.jpg" alt="photo" class="post__photo">
+                    </p>
+                    <div class="post__description">
+                        <p class="post__date">26 june 2016</p>
+                        <h3 class="post__title">5 best foods to make you</h3>
+                        <span class="post__teg">fresh&health</span>
+                        <p class="post__line"></p>
+                        <p class="post__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                        </p>
+                        <a href="./main.html" class="post__link">read article &#x2192;</a>
+                    </div>
+                </li>
+            </ul>
+
+
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
-        <div>
-            <img src="" alt="">
+        <div class="container2">
 
-        </div>
+            <img src="./media/1-Promo/logo.png" alt="" class="contact__logo" />
 
-        <div>
+            <ul class="footer__main">
+                <!-- Footer Contact -->
+                <ul class="footer__contact">
+                    <li>
+                        <p class="footer__line_mode"></p>
+                    </li>
+                    <li>
+                        <p class="contact__description">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, fuga omnis! Quae itaque
+                            fugit impedit ex omnis doloremque?
+                        </p>
+                    </li>
+                    <li class="contact__category">
+                        <i class="fa fa-map-marker-alt"></i>
+                        <span class="addres__text">
+                            <strong>100 highland ave,</strong> california, united state
+                        </span>
+                    </li>
+                    <li class="contact__category">
+                        <i class="fa fa-envelope-square"></i>
+                        <span class="email__text">contact@naturix.com</span>
+                    </li>
+                    <li class="contact__category">
+                        <i class="fas fa-phone-square-alt"></i>
+                        <span class="site__text">www.website.com</span>
+                    </li>
+                </ul>
 
-        </div>
+                <!-- Footer information -->
+                <ul class="footer__information">
+                    <ul class="information__title">
+                        <li>
+                            <span class="title__head">naturix
+                                <strong>information</strong>
+                            </span>
+                        </li>
+                        <li>
+                            <p class="footer__line"></p>
+                        </li>
+                    </ul>
+                    <ul class="information__category">
+                        <li class="category__item">
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            <a href="./main.html" class="category__name">about our shop</a>
+                        </li>
+                        <li class="category__item">
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            <a href="./main.html" class="category__name">top sellers</a>
+                        </li>
+                        <li class="category__item">
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            <a href="./main.html" class="category__name">our blog</a>
+                        </li>
+                        <li class="category__item">
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            <a href="./main.html" class="category__name">new products</a>
+                        </li>
+                        <li class="category__item">
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            <a href="./main.html" class="category__name">secure shopping</a>
+                        </li>
+                    </ul>
+                </ul>
 
-        <div>
+                <!-- Footer account -->
+                <ul class="footer__information">
+                    <ul class="information__title">
+                        <li>
+                            <span class="title__head">naturix
+                                <strong>information</strong>
+                            </span>
+                        </li>
+                        <li>
+                            <p class="footer__line"></p>
+                        </li>
+                    </ul>
+                    <ul class="information__category">
+                        <li class="category__item">
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            <a href="./main.html" class="category__name">my account</a>
+                        </li>
+                        <li class="category__item">
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            <a href="./main.html" class="category__name">discount</a>
+                        </li>
+                        <li class="category__item">
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            <a href="./main.html" class="category__name">personal information</a>
+                        </li>
+                        <li class="category__item">
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            <a href="./main.html" class="category__name">my address</a>
+                        </li>
+                        <li class="category__item">
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                            <a href="./main.html" class="category__name">order history</a>
+                        </li>
+                    </ul>
+                </ul>
+
+                <!-- Footer Instagram -->
+                <ul class="footer__instagram">
+                    <ul class="instagram__title">
+                        <li>
+                            <span class="title__head">photo
+                                <strong>instagram</strong>
+                            </span>
+                        </li>
+                        <li>
+                            <p class="footer__line"></p>
+                        </li>
+                    </ul>
+                    <ul class="instagram__images">
+                        <ul class="images__first-line">
+                            <li>
+                                <a href="./main.html" class="img__link">
+                                    <img src="./media/Footer/1.jpg" alt="" class="instagram__img">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./main.html" class="img__link">
+                                    <img src="./media/Footer/2.jpg" alt="" class="instagram__img">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./main.html" class="img__link">
+                                    <img src="./media/Footer/3.jpg" alt="" class="instagram__img">
+                                </a>
+                            </li>
+
+                        </ul>
+                        <ul class="images__second-line">
+                            <li>
+                                <a href="./main.html" class="img__link">
+                                    <img src="./media/Footer/4.jpg" alt="" class="instagram__img">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./main.html" class="img__link">
+                                    <img src="./media/Footer/5.jpg" alt="" class="instagram__img">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./main.html" class="img__link">
+                                    <img src="./media/Footer/6.jpg" alt="" class="instagram__img">
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
+                </ul>
+            </ul>
+
+            <ul class="footer__secondary">
+                <li>
+                    <p class="secodary__rights">
+                        <i class="far fa-copyright"></i>
+                        2017,,all right reserved
+                    </p>
+                </li>
+                <ul class="secondary__documents">
+                    <li>
+                        <a href="./main.html" class="documents__a">contact us</a>
+                        <p class="documents__circle"></p>
+                    </li>
+                    <li>
+                        <a href="./main.html" class="documents__a">term of use</a>
+                        <p class="documents__circle"></p>
+                    </li>
+                    <li>
+                        <a href="./main.html" class="documents__a">site map</a>
+                        <p class="documents__circle"></p>
+                    </li>
+                    <li>
+                        <a href="./main.html" class="documents__a">privacy </a>
+                        <p class="documents__circle"></p>
+                    </li>
+                </ul>
+            </ul>
+
 
         </div>
 
@@ -730,6 +1129,7 @@
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/js.js"></script>
     <script src="./slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/141fb5db1e.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

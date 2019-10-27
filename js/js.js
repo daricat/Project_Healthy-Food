@@ -21,21 +21,40 @@ function showSlides() {
   
 }
 
-
-function initSlider(){
-  $('.multiple-items').slick({
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 2
-  });
   
-};
-
-$(document).on('ready', function () {
-  initSlider();
+$(function initSlider(){
+  $('.autoplay').slick({
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  dots: true,
+  dotsClass: 'sale-products__nav',
+  });
 });
 
+$(function initSlider(){
+  $('.review').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    speed: 1500,
+    prevArrow: '.second-line__arrow-left',
+    nextArrow: '.second-line__arrow-right',
+  });
+});
 
+$(function initSlider(){
+  $('.s123').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 2000,
+    
+  });
+});
 
 
 

@@ -95,7 +95,6 @@ body
     display: flex
     flex-direction: row
     justify-content: space-between
-    align-items: flex-end
     padding: 0
 
 .nav__item
@@ -105,6 +104,12 @@ body
     font-weight: bold
     text-transform: uppercase
     padding-left: 53px
+    
+
+.nav__a:hover ~ .documents__circle
+    visibility: visible
+    opacity: 1
+
 
 .nav__a
     text-decoration: none
@@ -154,12 +159,16 @@ body
     font-size: 16px
     padding: 5px
     text-decoration: none
+    transition: 0.2s linear
 
 .container_a
     background: #fff
     display: block
     padding: 9px 41px 9px 41px
     border-radius: 26px
+    
+.container__a:hover
+    transform: scale(0.95)
 
 .slide-nav
     display: flex
@@ -200,6 +209,13 @@ body
     cursor: pointer
     z-index: 2
 
+// Adaptive Page 1
+
+    // min 1820
+
+
+            
+
 // PAGE 2
 
 .section-fruits
@@ -219,9 +235,7 @@ body
     justify-content: center
     box-sizing: border-box
     margin: 0 3px 32px 3px
-    padding: 0 3px 0 3px
-    height: 41px
-    width: 180px
+    padding: 12px 19px    
     border: solid 2px
     border-color: #d8d8d7
     border-radius: 26px
@@ -251,10 +265,10 @@ body
 .product
     display: flex
     flex-direction: row
-    justify-content: space-between
+    justify-content: center
     align-items: center
-    margin-top: 68px
-    padding-bottom: 271px
+    margin-top: 88px
+    padding: 0
     list-style-type: none
 
 .product_position
@@ -262,6 +276,7 @@ body
     position: relative
     flex-direction: column
     justify-content: flex-end
+    margin: 0 15px
     max-width: 270px
     width: 270px
     height: 440px
@@ -374,6 +389,16 @@ body
     margin: 0 auto
     padding: 8px 0 45px 0
 
+// Adaptive Page 2
+
+    // min 1820px
+
+@media screen and ( max-width: 1820px)
+    .product 
+        flex-wrap: wrap
+        padding: 0px 145px
+
+
 // Page 3
 
 .container2
@@ -477,6 +502,12 @@ body
     font-weight: 500
     color: #525252
     text-decoration: none
+    transition: 0.3s linear
+
+.plus__button:hover
+    border: solid 2px #83bb00
+
+
 
 .plus__organic
     display: flex
@@ -519,6 +550,10 @@ body
     border-radius: 13px
     padding: 0 20px 0 20px
     text-decoration: none
+    transition: 0.2s linear
+
+.items__fruits:hover
+    box-shadow: 0 0 20px #9bd300
 
 .items_logo
     margin: 0 auto
@@ -599,6 +634,124 @@ body
     flex-direction: row-reverse
     justify-content: space-between
     padding-top: 130px
+    padding-bottom: 125px
+
+// Page 5
+
+.naturix
+    background-color: #ffffff
+    padding: 20px 0 120px 0
+   
+// Title   
+
+.naturix-title
+    position: relative
+    display: flex
+    flex-direction: column    
+    align-items: center
+    margin: 0 0 102px 0
+    padding: 0
+
+.naturix-title li
+    list-style: none
+    margin: 0
+    padding: 0
+
+.naturix-title__first-line
+    margin: 0
+    font-family: 'Roboto'
+    font-size: 12px
+    font-weight: 500
+    color: #525252
+    letter-spacing: 0.4em
+
+.naturix-title__line
+    position: relative
+    top: 75px
+    margin: 0
+    height: 1px
+    width: 100%
+    background-color: #ecebe7
+    z-index: 1
+
+.naturix-title__logo
+    position: relative
+    display: block
+    margin: 0 auto
+    top: 25px
+    left: 47px
+    z-index: 3 
+
+.naturix-title__second-line
+    position: relative  
+    margin: 0 auto
+    padding: 10px 45px
+    border: solid 1px #e5e5e5
+    border-radius: 50px
+    background-color: #ffffff
+    font-family: "Roboto"
+    font-size: 40px
+    font-weight: 300
+    color: #525252
+    z-index: 2
+
+.naturix-filter
+    display: flex
+    flex-direction: row
+    align-items: flex-end
+    justify-content: space-around
+    list-style-type: none
+    margin: 0 0 40px 0
+    padding: 0 210px  
+    
+.naturix-filter strong
+    padding: 0 0 0 4px    
+
+.naturix-filter__button
+    display: flex
+    align-items: center
+    justify-content: center
+    box-sizing: border-box
+    margin: 0 3px 0px 3px
+    padding: 5px 13px
+    border: solid 1px
+    border-color: #d8d8d7
+    border-radius: 26px
+    background: #ffffff
+    font-family: 'Roboto'
+    font-size: 14px
+    color: #9f9e9c
+    text-decoration: none
+    transition: 0.2s linear
+
+.naturix-filter__button:hover
+    background: #81ba00
+    color: #ffffff
+    border: solid 1px
+    border-color: #81ba00
+    box-shadow: 0 11px 28px #75757547
+    transform: scale(1.05)
+
+// Product
+
+.naturix-product 
+    display: flex
+    flex-direction: column 
+    padding: 0
+    margin: 0  
+
+.product__naturix
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    margin-top: 88px
+    padding: 0
+    list-style-type: none
+
+
+
+
 
 // Page 6
 
@@ -690,13 +843,13 @@ body
     color: #75d1d1
 
 .sale-products
-    display: flex
     flex-direction: row 
     justify-content: space-between   
 
 .sale-product__bar
     display: flex
     flex-direction: row
+    margin: 0 15px
 
 .bar__nav
     display: flex
@@ -830,7 +983,52 @@ body
 
 .img__logo
     border-radius: 0 0 20px 20px
-    
+
+.sale-products__nav
+    display: flex
+    flex-direction: row
+    justify-content: center    
+
+.sale-products__nav li
+    list-style: none
+
+.sale-products__nav li button    
+    display: flex
+    justify-content: center
+    align-items: center
+    list-style: none
+    width: 24px
+    height: 24px
+    margin: 0 4px
+    border: none
+    background-color: #ffffff
+    border-radius: 50px
+    font-family: "Roboto"
+    font-size: 12px
+    font-weight: 600
+    color: #c3c3c3
+    transition: 0.1s linear
+
+.sale-products__nav li button:focus
+    background-color: #90d3a6
+    color: #ffffff
+
+
+.nav__dots
+    display: flex
+    justify-content: center
+    align-items: center
+    list-style: none
+    width: 24px
+    height: 24px
+    margin: 0 4px
+    background-color: #ffffff
+    border-radius: 50px
+    font-family: "Roboto"
+    font-size: 12px
+    font-weight: 600
+    color: #c3c3c3
+
 // Page 7
 
 .popular-product__logo
@@ -912,8 +1110,10 @@ body
     border: #efefef solid 1px
     font-size: 10px
     color: #9f9f9f
+    background-color: #ffffff
     cursor: pointer
-    transition: 0.1s linear    
+    transition: 0.1s linear
+    z-index: 2    
 
 .second-line__arrow-left:hover
     box-shadow: inset 0 0px 5px #7575752e
@@ -926,8 +1126,10 @@ body
     border: #efefef solid 1px
     font-size: 10px
     color: #9f9f9f
+    background-color: #ffffff
     cursor: pointer
-    transition: 0.1s linear  
+    transition: 0.1s linear
+    z-index: 2      
 
 .second-line__arrow-right:hover
     box-shadow: inset 0 0px 5px #7575752e
@@ -1040,7 +1242,9 @@ body
     background-image: url(../media/8/bg.png)
     background-size: contain
     background-repeat: no-repeat
+    padding: 0 0 138px 0
      
+    // Form
 
 .reviews__subscribe
     display: flex
@@ -1089,6 +1293,8 @@ body
     border-radius: 50px
     border: none  
 
+    // Reviews
+
 .comment
     display: flex
     flex-direction: row
@@ -1131,11 +1337,372 @@ body
     color: #333333
     padding-top: 50px
 
-// Footer
+.comment__nav
+    display: flex
+    justify-content: center
 
-.footer
+.comment__line
+    position: absolute
+    margin: 13px 0 0 0
+    height: 1px
+    width: 1170px
+    background-color: #ecebe7
+
+    // Blog title
+
+.blog-title
+    display: flex
+    flex-direction: column
+    align-items: center
+       
+
+.blog-title__first-line
+    margin: 75px 0 0 0
+    padding: 0
+    font-family: "Roboto"
+    font-size: 12px
+    font-weight: 500    
+    letter-spacing: 0.4em
+    text-transform: uppercase
+    color: #525252
+
+.blog-title__second-line
+    margin: 22px 0 0 0
+    padding: 0
+    font-family: "Roboto"
+    font-size: 35px
+    font-weight: 300    
+    color: #525252
+
+    // Blog post
+
+.blog-post
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin: 83px 0 0 0
+    padding: 0
+
+.post
+    display: flex
+    flex-direction: row
+    margin: 0
+    padding: 0
+    list-style: none
+
+.post__photo-before
+    position: relative
+    margin: 0
+    padding: 0
+
+.post__photo
+    display: block
+    width: 240px  
+    height: 220px 
+    border-radius: 10px             
+
+.post__photo-before::before
+    content: ""
+    position: absolute
+    bottom: 18px
+    right: 20px
+    border: 1px solid #eeeeee
+    border-radius: 10px
+    width: 240px    
+    height: 220px
+    z-index: -1
+
+.post__description
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin: 0 0 0 35px
+    padding: 0 8px 10px 0
+
+.post__date
+    margin: 0
+    font-family: "Roboto"
+    font-size: 10px
+    font-weight: 500    
+    color: #9f9f9f
+    text-transform: uppercase
+
+.post__title
+    margin: 0
+    padding: 0
+    font-family: "Roboto"
+    font-size: 22px
+    font-weight: 300    
+    color: #525252
+
+.post__teg
+    font-family: "Roboto"
+    font-size: 22px
+    font-weight: 600    
+    color: #525252
+
+.post__line
+    margin: 0
+    padding: 0
+    height: 2px
+    width: 30px
+    background-color: #efefef
+
+.post__text
+    margin: 0
+    padding: 0
+    max-width: 265px
+    font-family: "Roboto"
+    font-size: 14px
+    font-weight: 400    
+    color: #525252
+    line-height: 1.9em
+
+.post__link     
+    font-family: "Roboto"
+    font-size: 13px
+    font-weight: 500    
+    color: #999999
+    text-transform: uppercase
+    text-decoration: none
+    transition: 0.2s linear
+    
+.post__link:hover
+    color: #84c400
+
+
+
+
+/* Footer */
+
+.footer 
     background-image: url(../media/Footer/bg.jpg)
     background-size: cover
     background-position-x: center
     background-position-y: top
-    height: 630px
+    padding: 125px 0 0 0
+    
+
+.footer__main 
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: flex-start
+    margin: 0
+    padding: 0
+    padding-left: 10px
+    
+
+.footer__main li 
+    list-style: none
+
+
+.footer__contact 
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    padding: 0
+
+.contact__logo
+    padding-left: 10px
+
+.footer__line_mode
+    margin: 48px 0 0 0 
+    padding: 0
+    height: 2px
+    width: 30px
+    background-color: #7ac200
+
+.footer__line
+    margin: 26px 0 34px 0
+    padding: 0
+    height: 2px
+    width: 30px
+    background-color: #7ac200
+
+.contact__description 
+    max-width: 330px
+    padding: 0
+    margin: 34px 0 28px 0
+    font-family: "Roboto"
+    font-size: 14px
+    font-weight: 400
+    color: #525252
+
+.fa-map-marker-alt
+    transform: scale(0.7)
+    color: #525252
+
+.addres__text
+    padding: 0 0 0 20px
+    font-family: "Roboto"
+    font-size: 15px
+    font-weight: 400
+    color: #525252
+
+.fa-envelope-square
+    transform: scale(0.7)
+    color: #525252
+
+.email__text
+    padding: 0 0 0 20px
+    font-family: "Roboto"
+    font-size: 15px
+    font-weight: 400
+    color: #525252
+
+.fa-phone-square-alt
+    transform: scale(0.7)
+    color: #525252
+
+.site__text
+    padding: 0 0 0 20px
+    font-family: "Roboto"
+    font-size: 15px
+    font-weight: 400
+    color: #525252
+
+.footer__information 
+    display: flex
+    flex-direction: column
+    padding: 0
+    min-width: 169px
+
+.title__head
+    font-family: "Roboto"
+    font-size: 18px
+    font-weight: 400
+    color: #525252
+
+.information__title
+    padding: 0    
+
+.footer__instagram 
+    display: flex
+    flex-direction: column
+    padding: 0
+
+.instagram__title    
+    display: flex
+    flex-direction: column
+    padding: 0
+
+.information__category
+    padding: 0
+
+.category__item
+    padding: 0px 0 10px 0   
+      
+
+.instagram__images 
+    display: flex
+    flex-direction: column
+    padding: 0
+
+.instagram__img
+    padding: 8px
+    transition: 0.2s linear
+
+.images__first-line
+    display: flex
+    flex-direction: row
+    padding: 0
+
+.images__second-line
+    display: flex
+    flex-direction: row
+    padding: 0    
+
+.img__link:hover .instagram__img
+    transform: scale(0.9)
+
+.fa-arrow-alt-circle-right
+    transform: scale(0.7)
+    color: #525252 
+    transition: 0.2s linear
+
+
+.category__name
+    font-family: "Roboto"
+    font-size: 15px
+    font-weight: 400
+    color: #525252
+    padding: 0px 0 10px 0
+    text-decoration: none
+    transition: 0.2s linear
+
+.category__name:hover
+    font-weight: 500
+    color: #363636
+
+.category__item:hover .fa-arrow-alt-circle-right
+    transform: scale(0.8)
+
+
+.contact__category 
+    display: flex
+    flex-direction: row
+    padding: 0 0 10px 0
+
+
+.fa-map-marker-alt 
+    color: #525252
+
+.fa-envelope-square 
+    color: #525252
+
+.fa-phone-square-alt 
+    color: #525252
+
+.footer__secondary
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin: 175px 0 40px 0
+    margin-top: 175px
+    list-style: none
+
+.secodary__rights
+    font-family: "Roboto"
+    font-size: 15px
+    font-weight: 400
+    color: #999999
+    padding: 0
+    margin: 0
+
+.secondary__documents
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+.secondary__documents li
+    display: flex
+    flex-direction: column
+    list-style: none
+
+.documents__a
+    padding: 0 23px 0 23px
+    font-family: "Roboto"
+    font-size: 15px
+    font-weight: 500
+    color: #999999
+    text-decoration: none
+    transition: 0.1s linear 
+           
+.documents__a:hover
+    color: #545454    
+
+.documents__circle    
+    margin: 0 auto
+    margin-top: 11px
+    width: 6px
+    height: 6px
+    border-radius: 50px
+    background: #80bc00
+    visibility: hidden
+    opacity: 0
+    transition: 0.2s linear
+
+.documents__a:hover ~ .documents__circle    
+    visibility: visible
+    opacity: 1
