@@ -21,13 +21,35 @@ function showSlides() {
   
 }
 
+$(function initSlider(){
+  $('.multiple-items2').slick({
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  dots: true,
+  dotsClass: 'sale-products__nav',
+  });
+});  
+	
   
 $(function initSlider(){
   $('.autoplay').slick({
   slidesToShow: 2,
   slidesToScroll: 2,
   arrows: false,
-  autoplay: true,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  dots: true,
+  dotsClass: 'sale-products__nav',  
+  });
+});
+
+$(function initSlider(){
+  $('.autoplay2').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  arrows: false,
+  autoplay: false,
   autoplaySpeed: 2000,
   dots: true,
   dotsClass: 'sale-products__nav',
