@@ -137,7 +137,32 @@ var x = setInterval(function() {
 }, 1000);
 
 
+//filter
 
+$(function() {
+
+  let filter = $("[data-filter]");
+
+  filter.on("click", function(event) {
+      event.preventDefault();
+
+      let item = $(this).data('filter');
+
+      if(item == 'all') {
+          $("[data-item]").removeClass("hide");
+      } else {
+          $("[data-item]").each(function() {
+              let workItem = $(this).data('item');
+
+              if(workItem != item) {
+                  $(this).addClass('hide');
+              } else {
+                  $(this).removeClass('hide');
+              }
+          });
+      }
+  });
+});
 
 
 

@@ -307,6 +307,10 @@ body {
   padding: 30px 5px;
 }
 
+.hide {
+  display: none !important;
+}
+
 .filter-fruits {
   display: flex;
   flex-direction: row;
@@ -372,7 +376,7 @@ body {
 }
 
 .product_position {
-  display: flex !important;
+  display: flex;
   position: relative;
   flex-direction: column;
   justify-content: flex-end;
@@ -1657,6 +1661,7 @@ body {
 
 .b-veget {
   margin: 6px 54px;
+  display: flex !important;
 }
 
 @media screen and (max-width: 1124px) {

@@ -101,26 +101,26 @@
             <!-- Button filter -->
             <ul class="filter-fruits">
                 <li>
-                    <button class="button-fruits" value="b-fruits">organic <strong>fruits</strong></button>
+                    <button class="button-fruits" value="b-fruits" data-filter='all'>organic <strong>all</strong></button>
                 </li>
                 <li>
-                    <button class="button-fruits" value="b-veget">organic <strong>
+                    <button class="button-fruits" value="b-veget" data-filter='vegetbles'>organic <strong>
                             vegetables</strong></button>
                 </li>
                 <li>
                     <img src="./media/2-Section/logo.png" class="filter-fruits__img" />
                 </li>
                 <li>
-                    <button class="button-fruits" value="b-juices">organic <strong>juices</strong></button>
+                    <button class="button-fruits" value="b-juices" data-filter='juices'>organic <strong>juices</strong></button>
                 </li>
                 <li>
-                    <button class="button-fruits" value="b-juices">organic <strong>fruits</strong></button>
+                    <button class="button-fruits" value="b-juices" data-filter='fruits'>organic <strong>fruits</strong></button>
                 </li>
             </ul>
 
             <!-- Products -->
             <ul class="product">
-                <li class="product__background product_position">
+                <li class="product__background product_position" data-item="vegetbles">
                     <img src="./media/2-Section/tomato.png" alt="" class="product__logo">
                     <span class="product__text-first">organic <strong>tomato</strong></span>
                     <span class="product__text-second">$50.00</span>
@@ -130,7 +130,7 @@
                         <a href="./main.html" class="open"><i class="fa fa-arrows-alt"></i></a>
                     </div>
                 </li>
-                <li class="product__background product_position">
+                <li class="product__background product_position" data-item="vegetbles">
                     <img src="./media/2-Section/cabbage.png" alt="" class="product__logo veget">
                     <span class="product__text-first">organic <strong>cabage</strong></span>
                     <span class="product__text-second">$50.00</span>
@@ -140,8 +140,7 @@
                         <a href="./main.html" class="open"><i class="fa fa-arrows-alt"></i></a>
                     </div>
                 </li>
-                <li class="product__background product_position">
-                    <img src="./media/2-Section/cherry.png" alt="" class="product__logo fruits">
+                <li class="product__background product_position" data-item="fruits">                    <img src="./media/2-Section/cherry.png" alt="" class="product__logo fruits">
                     <span class="product__text-first">organic <strong>cherry</strong></span>
                     <span class="product__text-second">$50.00</span>
                     <div class="option">
@@ -150,7 +149,7 @@
                         <a href="./main.html" class="open"><i class="fa fa-arrows-alt"></i></a>
                     </div>
                 </li>
-                <li class="product__background product_position">
+                <li class="product__background product_position" data-item="vegetbles">
                     <img src="./media/2-Section/asparagus.png" alt="" class="product__logo veget">
                     <span class="product__text-first">organic <strong>asparagus</strong></span>
                     <span class="product__text-second">$50.00</span>
@@ -160,7 +159,7 @@
                         <a href="./main.html" class="open"><i class="fa fa-arrows-alt"></i></a>
                     </div>
                 </li>
-                <li class="product__background product_position">
+                <li class="product__background product_position" data-item="fruits">
                     <img src="./media/2-Section/pineapple.png" alt="" class="product__logo fruits">
                     <span class="product__text-first">organic <strong>pineapple</strong></span>
                     <span class="product__text-second">$50.00</span>
@@ -170,7 +169,7 @@
                         <a href="./main.html" class="open"><i class="fa fa-arrows-alt"></i></a>
                     </div>
                 </li>
-                <li class="product__background product_position">
+                <li class="product__background product_position" data-item="fruits">
                     <img src="./media/2-Section/onion.png" alt="" class="product__logo veget">
                     <span class="product__text-first">organic <strong>onion</strong></span>
                     <span class="product__text-second">$50.00</span>
@@ -374,30 +373,30 @@
             <!-- Button filter -->
             <ul class="naturix-filter">
                 <li>
-                    <button href="./main.html" class="naturix-filter__button">all <strong>goods</strong></button>
+                    <button href="./main.html" class="naturix-filter__button" data-filter='all'>all <strong>goods</strong></button>
                 </li>
                 <li>
-                    <button href="./main.html" class="naturix-filter__button">organic
+                    <button href="./main.html" class="naturix-filter__button" data-filter='vegetbles'>organic
                         <strong>vegetables</strong></button>
                 </li>
                 <li>
-                    <button href="./main.html" class="naturix-filter__button">organic <strong>fruits</strong></button>
+                    <button href="./main.html" class="naturix-filter__button" data-filter="product_fru">organic <strong>fruits</strong></button>
                 </li>
                 <li>
-                    <button href="./main.html" class="naturix-filter__button">organic <strong>tea</strong></button>
+                    <button href="./main.html" class="naturix-filter__button" data-filter="product_tea">organic <strong>tea</strong></button>
                 </li>
                 <li>
-                    <button href="./main.html" class="naturix-filter__button">all <strong> breads</strong></button>
+                    <button href="./main.html" class="naturix-filter__button" data-filter="product_bread">all <strong> breads</strong></button>
                 </li>
                 <li>
-                    <button href="./main.html" class="naturix-filter__button">organic <strong>juices</strong></button>
+                    <button href="./main.html" class="naturix-filter__button" data-filter='juices'>organic <strong>juices</strong></button>
                 </li>
             </ul>
 
             <!-- Product -->
             <ul class="naturix-product">
                 <ul class="product__naturix">
-                    <li class="product__background product_position">
+                    <li class="product__background product_position" data-item="vegetbles">
                         <img src="./media/2-Section/tomato.png" alt="" class="product__logo">
                         <span class="product__text-first">organic <strong>tomato</strong></span>
                         <span class="product__text-second">$50.00</span>
@@ -407,7 +406,7 @@
                             <a href="./main.html" class="open"><i class="fa fa-arrows-alt"></i></a>
                         </div>
                     </li>
-                    <li class="product__background product_position">
+                    <li class="product__background product_position" data-item="vegetbles">
                         <img src="./media/2-Section/cabbage.png" alt="" class="product__logo">
                         <span class="product__text-first">organic <strong>cabage</strong></span>
                         <span class="product__text-second">$50.00</span>
@@ -417,7 +416,7 @@
                             <a href="./main.html" class="open"><i class="fa fa-arrows-alt"></i></a>
                         </div>
                     </li>
-                    <li class="product__background product_position">
+                    <li class="product__background product_position" data-item="product_fru">
                         <img src="./media/2-Section/cherry.png" alt="" class="product__logo">
                         <span class="product__text-first">organic <strong>cherry</strong></span>
                         <span class="product__text-second">$50.00</span>
@@ -427,7 +426,7 @@
                             <a href="./main.html" class="open"><i class="fa fa-arrows-alt"></i></a>
                         </div>
                     </li>
-                    <li class="product__background product_position">
+                    <li class="product__background product_position" data-item="vegetbles">
                         <img src="./media/2-Section/asparagus.png" alt="" class="product__logo">
                         <span class="product__text-first">organic <strong>asparagus</strong></span>
                         <span class="product__text-second">$50.00</span>
@@ -440,8 +439,8 @@
 
                 </ul>
                 <ul class="product__naturix">
-                    <li class="product__background product_position">
-                        <img src="./media/2-Section/tomato.png" alt="" class="product__logo">
+                    <li class="product__background product_position" data-item="product_fru">
+                        <img src="./media/2-Section/pineapple.png" alt="" class="product__logo">
                         <span class="product__text-first">organic <strong>tomato</strong></span>
                         <span class="product__text-second">$50.00</span>
                         <div class="option">
@@ -450,8 +449,8 @@
                             <a href="./main.html" class="open"><i class="fa fa-arrows-alt"></i></a>
                         </div>
                     </li>
-                    <li class="product__background product_position">
-                        <img src="./media/2-Section/cabbage.png" alt="" class="product__logo">
+                    <li class="product__background product_position" data-item="vegetbles">
+                        <img src="./media/2-Section/onion.png" alt="" class="product__logo">
                         <span class="product__text-first">organic <strong>cabage</strong></span>
                         <span class="product__text-second">$50.00</span>
                         <div class="option">
@@ -460,8 +459,8 @@
                             <a href="./main.html" class="open"><i class="fa fa-arrows-alt"></i></a>
                         </div>
                     </li>
-                    <li class="product__background product_position">
-                        <img src="./media/2-Section/cherry.png" alt="" class="product__logo">
+                    <li class="product__background product_position" data-item="product_fru">
+                        <img src="./media/7/strawberry.png" alt="" class="product__logo">
                         <span class="product__text-first">organic <strong>cherry</strong></span>
                         <span class="product__text-second">$50.00</span>
                         <div class="option">
@@ -470,8 +469,8 @@
                             <a href="./main.html" class="open"><i class="fa fa-arrows-alt"></i></a>
                         </div>
                     </li>
-                    <li class="product__background product_position">
-                        <img src="./media/2-Section/asparagus.png" alt="" class="product__logo">
+                    <li class="product__background product_position" data-item="product_fru">
+                        <img src="./media/7/peach.png" alt="" class="product__logo">
                         <span class="product__text-first">organic <strong>asparagus</strong></span>
                         <span class="product__text-second">$50.00</span>
                         <div class="option">
