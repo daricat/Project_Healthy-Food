@@ -55,14 +55,16 @@
                                 <p class="documents__circle"></p>
                             </li>
                             <li class="nav__item">
-                                <a href="#">
+                                <a href="#" class="nav__a">
                                     <img src="media/1-Promo/basket.png">
                                 </a>
+                                <p class="documents__circle"></p>
                             </li>
                             <li class="nav__item">
-                                <a href="#">
+                                <a href="#" class="nav__a">
                                     <img src="media/1-Promo/menu.png">
                                 </a>
+                                <p class="documents__circle"></p>
                             </li>
                         </ul>
                     </nav>
@@ -208,6 +210,7 @@
                     </div>
 
                     <a href="./bem.html" class="plus__button">READ MORE</a>
+                    <a href="./bem.html" class="plus__button_hiden"><i class="fas fa-greater-than"></i></a>
                 </li>
                 <li class="plus__organic">
                     <img src="./media/3-Text/plus-organic.png" alt="" class="plus__logo">
@@ -217,6 +220,7 @@
                     </div>
 
                     <a href="./bem.html" class="plus__button">READ MORE</a>
+                    <a href="./bem.html" class="plus__button_hiden"><i class="fas fa-greater-than"></i></a>
                 </li>
                 <li class="plus__quality">
                     <img src="./media/3-Text/plus-quality.png" alt="" class="plus__logo">
@@ -226,6 +230,7 @@
                     </div>
 
                     <a href="./bem.html" class="plus__button">READ MORE</a>
+                    <a href="./bem.html" class="plus__button_hiden"><i class="fas fa-greater-than"></i></a>
                 </li>
                 <li class="plus__natural">
                     <img src="./media/3-Text/plus-natural.png" alt="" class="plus__logo">
@@ -235,6 +240,7 @@
                     </div>
 
                     <a href="./bem.html" class="plus__button">READ MORE</a>
+                    <a href="./bem.html" class="plus__button_hiden"><i class="fas fa-greater-than"></i></a>
                 </li>
             </ul>
         </div>
@@ -494,30 +500,30 @@
                 </span>
             </div>
 
-            <p class="deals__line"></p>            
+            <p class="deals__line"></p>
 
             <ul class="deals__timer">
                 <li class="timer__element">
                     <p class="element__text">
-                        <span class="element__num">28</span>
+                        <span class="element__num" id="day">28</span>
                         <span class="element__name">days</span>
                     </p>
                 </li>
                 <li class="timer__element">
                     <p class="element__text">
-                        <span class="element__num">25</span>
+                        <span class="element__num" id="hour">25</span>
                         <span class="element__name">hours</span>
                     </p>
                 </li>
                 <li class="timer__element">
                     <p class="element__text">
-                        <span class="element__num">57</span>
+                        <span class="element__num" id="min">57</span>
                         <span class="element__name">mins</span>
                     </p>
                 </li>
                 <li class="timer__element">
                     <p class="element__text">
-                        <span class="element__num">36</span>
+                        <span class="element__num" id="sec">36</span>
                         <span class="element__name">sec</span>
                     </p>
                 </li>
@@ -726,7 +732,7 @@
                     </div>
                 </div>
 
-                
+
             </div>
 
 
@@ -752,8 +758,10 @@
                         <i class="fa fa-star"></i>
                     </span>
                 </p>
-
             </div>
+
+
+
 
             <ul class="popular-product__category">
                 <ul class="category__new-arrivals">
@@ -762,140 +770,265 @@
                         <div class="title__second-line">
                             <h2 class="second-line__title">organic <strong>new arrivals</strong></h2>
                             <div class="second-line__arrows">
-                                <button class="second-line__arrow-left">&#x2190;</button>
-                                <button class="second-line__arrow-right">&#x2192;</button>
+                                <button class="second-line__arrow-left1" id="arr1">&#x2190;</button>
+                                <button class="second-line__arrow-right1">&#x2192;</button>
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <a href="./main.html" class="new-arrivals__element">
-                            <img class="new-arrivals__img" src="./media/7/blackberry.png" />
-                            <div class="new-arrivals__brief">
-                                <h3 class="brief__title">organic <strong>blackberry</strong></h3>
-                                <p class="brief__line"></p>
-                                <span class="brief__price">$50.00</span>
-                            </div>
-                        </a>
 
-                    </li>
-                    <li>
-                        <a href="./main.html" class="new-arrivals__element">
-                            <img class="new-arrivals__img" src="./media/7/peach.png" />
-                            <div class="new-arrivals__brief">
-                                <h3 class="brief__title">organic <strong>peach</strong></h3>
-                                <p class="brief__line"></p>
-                                <span class="brief__price">$50.00</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./main.html" class="new-arrivals__element">
-                            <img class="new-arrivals__img" src="./media/7/red-berry.png" />
-                            <div class="new-arrivals__brief">
-                                <h3 class="brief__title">organic <strong>redberry</strong></h3>
-                                <p class="brief__line"></p>
-                                <span class="brief__price">$50.00</span>
-                            </div>
-                        </a>
-                    </li>
+                    <ul class="review1">
+                        <ul class="item">
+                            <li>
+                                <a href="./main.html" class="new-arrivals__element">
+                                    <img class="new-arrivals__img" src="./media/7/blackberry.png" />
+                                    <div class="new-arrivals__brief">
+                                        <h3 class="brief__title">organic <strong>blackberry</strong></h3>
+                                        <p class="brief__line"></p>
+                                        <span class="brief__price">$50.00</span>
+                                    </div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="./main.html" class="new-arrivals__element">
+                                    <img class="new-arrivals__img" src="./media/7/peach.png" />
+                                    <div class="new-arrivals__brief">
+                                        <h3 class="brief__title">organic <strong>peach</strong></h3>
+                                        <p class="brief__line"></p>
+                                        <span class="brief__price">$50.00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./main.html" class="new-arrivals__element">
+                                    <img class="new-arrivals__img" src="./media/7/red-berry.png" />
+                                    <div class="new-arrivals__brief">
+                                        <h3 class="brief__title">organic <strong>redberry</strong></h3>
+                                        <p class="brief__line"></p>
+                                        <span class="brief__price">$50.00</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="item">
+                            <li>
+                                <a href="./main.html" class="new-arrivals__element">
+                                    <img class="new-arrivals__img" src="./media/7/blackberry.png" />
+                                    <div class="new-arrivals__brief">
+                                        <h3 class="brief__title">organic <strong>blackberry</strong></h3>
+                                        <p class="brief__line"></p>
+                                        <span class="brief__price">$50.00</span>
+                                    </div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="./main.html" class="new-arrivals__element">
+                                    <img class="new-arrivals__img" src="./media/7/peach.png" />
+                                    <div class="new-arrivals__brief">
+                                        <h3 class="brief__title">organic <strong>peach</strong></h3>
+                                        <p class="brief__line"></p>
+                                        <span class="brief__price">$50.00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./main.html" class="new-arrivals__element">
+                                    <img class="new-arrivals__img" src="./media/7/red-berry.png" />
+                                    <div class="new-arrivals__brief">
+                                        <h3 class="brief__title">organic <strong>redberry</strong></h3>
+                                        <p class="brief__line"></p>
+                                        <span class="brief__price">$50.00</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
+
                 </ul>
+
                 <ul class="category__new-arrivals category2__hidden">
                     <li class="new-arrivals__title">
                         <span class="title__first-line">BEST SELLER</span>
                         <div class="title__second-line">
                             <h2 class="second-line__title">organic <strong>popular</strong></h2>
                             <div class="second-line__arrows">
-                                <button class="second-line__arrow-left">&#x2190;</button>
-                                <button class="second-line__arrow-right">&#x2192;</button>
+                                <button class="second-line__arrow-left2">&#x2190;</button>
+                                <button class="second-line__arrow-right2">&#x2192;</button>
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <a href="./main.html" class="new-arrivals__element">
-                            <img class="new-arrivals__img" src="./media/7/peach.png" />
-                            <div class="new-arrivals__brief">
-                                <h3 class="brief__title">organic <strong>strawberry</strong></h3>
-                                <p class="brief__line"></p>
-                                <span class="brief__price">$50.00</span>
-                            </div>
-                        </a>
 
-                    </li>
-                    <li>
-                        <a href="./main.html" class="new-arrivals__element">
-                            <img class="new-arrivals__img" src="./media/7/red-berry.png" />
-                            <div class="new-arrivals__brief">
-                                <h3 class="brief__title">organic <strong>mushroom</strong></h3>
-                                <p class="brief__line"></p>
-                                <span class="brief__price">$50.00</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./main.html" class="new-arrivals__element">
-                            <img class="new-arrivals__img" src="./media/7/blackberry.png" />
-                            <div class="new-arrivals__brief">
-                                <h3 class="brief__title">organic <strong>apple</strong></h3>
-                                <p class="brief__line"></p>
-                                <span class="brief__price">$50.00</span>
-                            </div>
-                        </a>
-                    </li>
+                    <ul class="review2">
+                        <ul class="item">
+                            <li>
+                                <a href="./main.html" class="new-arrivals__element">
+                                    <img class="new-arrivals__img" src="./media/7/peach.png" />
+                                    <div class="new-arrivals__brief">
+                                        <h3 class="brief__title">organic <strong>strawberry</strong></h3>
+                                        <p class="brief__line"></p>
+                                        <span class="brief__price">$50.00</span>
+                                    </div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="./main.html" class="new-arrivals__element">
+                                    <img class="new-arrivals__img" src="./media/7/red-berry.png" />
+                                    <div class="new-arrivals__brief">
+                                        <h3 class="brief__title">organic <strong>mushroom</strong></h3>
+                                        <p class="brief__line"></p>
+                                        <span class="brief__price">$50.00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./main.html" class="new-arrivals__element">
+                                    <img class="new-arrivals__img" src="./media/7/blackberry.png" />
+                                    <div class="new-arrivals__brief">
+                                        <h3 class="brief__title">organic <strong>apple</strong></h3>
+                                        <p class="brief__line"></p>
+                                        <span class="brief__price">$50.00</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="item">
+                            <li>
+                                <a href="./main.html" class="new-arrivals__element">
+                                    <img class="new-arrivals__img" src="./media/7/peach.png" />
+                                    <div class="new-arrivals__brief">
+                                        <h3 class="brief__title">organic <strong>strawberry</strong></h3>
+                                        <p class="brief__line"></p>
+                                        <span class="brief__price">$50.00</span>
+                                    </div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="./main.html" class="new-arrivals__element">
+                                    <img class="new-arrivals__img" src="./media/7/red-berry.png" />
+                                    <div class="new-arrivals__brief">
+                                        <h3 class="brief__title">organic <strong>mushroom</strong></h3>
+                                        <p class="brief__line"></p>
+                                        <span class="brief__price">$50.00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./main.html" class="new-arrivals__element">
+                                    <img class="new-arrivals__img" src="./media/7/blackberry.png" />
+                                    <div class="new-arrivals__brief">
+                                        <h3 class="brief__title">organic <strong>apple</strong></h3>
+                                        <p class="brief__line"></p>
+                                        <span class="brief__price">$50.00</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </ul>
+
                 </ul>
+
                 <ul class="category__new-arrivals category3__hidden">
                     <li class="new-arrivals__title">
                         <span class="title__first-line">COSTUMER NEEDS</span>
                         <div class="title__second-line">
                             <h2 class="second-line__title">organic <strong>random</strong></h2>
                             <div class="second-line__arrows">
-                                <button class="second-line__arrow-left">&#x2190;</button>
-                                <button class="second-line__arrow-right">&#x2192;</button>
+                                <button class="second-line__arrow-left3">&#x2190;</button>
+                                <button class="second-line__arrow-right3">&#x2192;</button>
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <a href="./main.html" class="new-arrivals__element">
-                            <img class="new-arrivals__img" src="./media/7/peach.png" />
-                            <div class="new-arrivals__brief">
-                                <h3 class="brief__title">organic <strong>grapes</strong></h3>
-                                <p class="brief__line"></p>
-                                <span class="brief__price">$50.00</span>
-                            </div>
-                        </a>
 
-                    </li>
-                    <li>
-                        <a href="./main.html" class="new-arrivals__element">
-                            <img class="new-arrivals__img" src="./media/7/blackberry.png" />
-                            <div class="new-arrivals__brief">
-                                <h3 class="brief__title">organic <strong>blackberry</strong></h3>
-                                <p class="brief__line"></p>
-                                <span class="brief__price">$50.00</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./main.html" class="new-arrivals__element">
-                            <img class="new-arrivals__img" src="./media/7/peach.png" />
-                            <div class="new-arrivals__brief">
-                                <h3 class="brief__title">organic <strong>peach</strong></h3>
-                                <p class="brief__line"></p>
-                                <span class="brief__price">$50.00</span>
-                            </div>
-                        </a>
-                    </li>
+                    <ul class="review3">
+                        <ul class="item">
+                            <li>
+                                <a href="./main.html" class="new-arrivals__element">
+                                    <img class="new-arrivals__img" src="./media/7/peach.png" />
+                                    <div class="new-arrivals__brief">
+                                        <h3 class="brief__title">organic <strong>grapes</strong></h3>
+                                        <p class="brief__line"></p>
+                                        <span class="brief__price">$50.00</span>
+                                    </div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="./main.html" class="new-arrivals__element">
+                                    <img class="new-arrivals__img" src="./media/7/blackberry.png" />
+                                    <div class="new-arrivals__brief">
+                                        <h3 class="brief__title">organic <strong>blackberry</strong></h3>
+                                        <p class="brief__line"></p>
+                                        <span class="brief__price">$50.00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./main.html" class="new-arrivals__element">
+                                    <img class="new-arrivals__img" src="./media/7/peach.png" />
+                                    <div class="new-arrivals__brief">
+                                        <h3 class="brief__title">organic <strong>peach</strong></h3>
+                                        <p class="brief__line"></p>
+                                        <span class="brief__price">$50.00</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="item">
+                            <li>
+                                <a href="./main.html" class="new-arrivals__element">
+                                    <img class="new-arrivals__img" src="./media/7/peach.png" />
+                                    <div class="new-arrivals__brief">
+                                        <h3 class="brief__title">organic <strong>grapes</strong></h3>
+                                        <p class="brief__line"></p>
+                                        <span class="brief__price">$50.00</span>
+                                    </div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="./main.html" class="new-arrivals__element">
+                                    <img class="new-arrivals__img" src="./media/7/blackberry.png" />
+                                    <div class="new-arrivals__brief">
+                                        <h3 class="brief__title">organic <strong>blackberry</strong></h3>
+                                        <p class="brief__line"></p>
+                                        <span class="brief__price">$50.00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./main.html" class="new-arrivals__element">
+                                    <img class="new-arrivals__img" src="./media/7/peach.png" />
+                                    <div class="new-arrivals__brief">
+                                        <h3 class="brief__title">organic <strong>peach</strong></h3>
+                                        <p class="brief__line"></p>
+                                        <span class="brief__price">$50.00</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </ul>
                 </ul>
-            </ul>
+            </ul>   
 
             <ul class="banners">
-                <li class="banners__one">
-                    <img src="./media/7/banner-one.png" class="img_banner"/>
-                    <a href="main.html" class="banner__button">SHOP NOW &#x2192;</a>
-                </li>
-                <li class="banners__one">
-                    <img src="./media/7/banner-two.png" class="img_banner"/>
-                    <a href="main.html" class="banner__button_color">SHOP NOW &#x2192;</a>
-                </li>
+                    <li class="banners__one">
+                        <img src="./media/7/banner-one.png" class="img_banner" />
+                        <a href="main.html" class="banner__button">SHOP NOW &#x2192;</a>
+                    </li>
+                    <li class="banners__one">
+                        <img src="./media/7/banner-two.png" class="img_banner" />
+                        <a href="main.html" class="banner__button_color">SHOP NOW &#x2192;</a>
+                    </li>
             </ul>
         </div>
     </section>
@@ -903,7 +1036,7 @@
     <!-- Page 8 -->
     <section class="reviews" id="blog">
         <div class="container2">
-            <!-- Form -->            
+            <!-- Form -->
             <div class="reviews__subscribe">
                 <h2 class="reviews__title">
                     <span class="title__first">JOIN OUR NEWSLETTER</span>
