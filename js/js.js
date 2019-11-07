@@ -40,7 +40,8 @@ $(function initSlider(){
   autoplay: false,
   autoplaySpeed: 2000,
   dots: true,
-  dotsClass: 'sale-products__nav',  
+  
+  
   });
 });
 
@@ -52,7 +53,6 @@ $(function initSlider(){
   autoplay: false,
   autoplaySpeed: 2000,
   dots: true,
-  dotsClass: 'sale-products__nav',
   });
 });
 

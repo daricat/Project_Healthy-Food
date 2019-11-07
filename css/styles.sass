@@ -82,6 +82,12 @@ body
     padding: 22px 2px 0 2px
     box-sizing: border-box
 
+.logo-hover
+    transition: 0.5s linear
+
+.logo-hover:hover
+    filter: drop-shadow(0px 0px 20px #d9ff00)
+
 .logo-position
     padding-left: 21px
 
@@ -104,12 +110,10 @@ body
     font-weight: bold
     text-transform: uppercase
     padding-left: 53px
-    
 
 .nav__a:hover ~ .documents__circle
     visibility: visible
     opacity: 1
-
 
 .nav__a
     text-decoration: none
@@ -166,7 +170,7 @@ body
     display: block
     padding: 9px 41px 9px 41px
     border-radius: 26px
-    
+
 .container__a:hover
     transform: scale(0.95)
 
@@ -176,7 +180,6 @@ body
     justify-content: flex-end
     padding-bottom: 55px
     padding-right: 10px
-        
 
 .slide-nav__numbertext
     font-family: 'Roboto'
@@ -211,15 +214,16 @@ body
     cursor: pointer
     z-index: 2
 
-
 @media screen and (max-width: 880px)
+    .slider
+        height: 500px
     .title-position
         padding-top: 100px
         margin: 0 auto 51px auto
     .title__p-first-line
         font-size: 40px
     .title__p-second-line
-        padding: 10px    
+        padding: 10px
     .slide-nav
         padding-bottom: 83px
     .nav
@@ -233,11 +237,11 @@ body
     .slides_slide3
         height: 500px
     .slides_slide4
-        height: 500px            
+        height: 500px
     .slides_slide5
         height: 500px
     .container__a
-        margin-bottom: 122px    
+        margin-bottom: 122px
 
 @media screen and (max-width: 530px)
     .title-position
@@ -247,9 +251,7 @@ body
     .container__a
         margin-bottom: 60px
     .title-position
-        margin: 0px auto 30px auto     
-
-            
+        margin: 0px auto 30px auto
 
 // PAGE 2
 
@@ -261,16 +263,14 @@ body
 .hide
     display: none !important
 
-
 .filter-fruits
     display: flex
     flex-direction: row
     align-items: flex-end
-    justify-content: space-around
-    padding: 0px 287px
+    justify-content: center
+    padding: 0px 20px
     margin: 0
     list-style-type: none
-
 
 .button-fruits
     display: flex
@@ -278,7 +278,7 @@ body
     justify-content: center
     box-sizing: border-box
     margin: 0 3px 32px 3px
-    padding: 12px 19px    
+    padding: 12px 19px
     border: solid 2px
     border-color: #d8d8d7
     border-radius: 26px
@@ -293,7 +293,7 @@ body
     outline: none
 
 .button-fruits:focus
-    outline: none    
+    outline: none
 
 .button-fruits:hover
     background: #81ba00
@@ -318,11 +318,11 @@ body
     justify-content: center
     align-items: center
     padding: 0
-    margin: 0
+    margin: 40px 0 0 0
     list-style-type: none
 
 .product_position
-    display: flex 
+    display: flex
     position: relative
     flex-direction: column
     justify-content: flex-end
@@ -444,7 +444,7 @@ body
     // min 1820px
 
 @media screen and (max-width: 1820px)
-    .product 
+    .product
         flex-wrap: wrap
 
 @media screen and (max-width: 918px)
@@ -467,7 +467,6 @@ body
     .filter-fruits__img
         display: none
 
-
 @media screen and (max-width: 590px)
     .product_position
         max-width: 160px
@@ -484,7 +483,7 @@ body
     .option
         transform: scale(0.5)
         left: -10px
-        top: 10px 
+        top: 10px
     .filter-fruits
         flex-wrap: wrap
         justify-content: center
@@ -493,7 +492,6 @@ body
         font-size: 14px
         padding: 8px 14px
         margin: 0 3px 7px 3px
-
 
 @media screen and (max-width: 431px)
     .product_position
@@ -512,10 +510,6 @@ body
         transform: scale(0.5)
         left: -30px
         top: 8px
-
-    
-
-
 
 // Page 3
 
@@ -590,6 +584,12 @@ body
     display: flex
     flex-direction: column
 
+.plus__all
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
 .plus__title
     margin: 0
     margin-bottom: 28px
@@ -659,12 +659,11 @@ body
     flex-direction: column
     align-self: flex-end
 
-   
 @media screen and (max-width: 840px)
     .company_position
         background-position-x: left
         padding: 20px 0
-    .company__plus        
+    .company__plus
         flex-direction: column
         justify-content: center
         align-items: center
@@ -681,22 +680,22 @@ body
         flex-direction: row
         align-items: center
         align-self: auto
-        margin: 10px 15px     
+        margin: 10px 15px
     .plus__quality
         display: flex
         flex-direction: row
         align-items: center
         align-self: auto
-        margin: 10px 15px        
+        margin: 10px 15px
     .plus__natural
         display: flex
-        flex-direction: row   
+        flex-direction: row
         align-items: center
         align-self: auto
         margin: 10px 15px
     .plus__logo
-        margin: 5px 5px       
-    .plus__title-text       
+        margin: 5px 5px
+    .plus__title-text
         flex-direction: column
         justify-content: center
         align-items: flex-start
@@ -705,15 +704,15 @@ body
         margin-bottom: 11px
         text-align: initial
         font-family: "Roboto"
-        font-size: 14px
+        font-size: 17px
         font-weight: 400
         color: #525252
     .plus__text
-        max-width: 211px       
+        font-size: 13px
+        max-width: 211px
         padding: 0
-        text-align: left
     .company__title
-        padding: 0 
+        padding: 0
 
 @media screen and (max-width: 600px)
     .title-first-line
@@ -725,26 +724,25 @@ body
     .plus__text
         font-size: 12px
     .plus__logo
-        transform: scale(0.8)                    
+        transform: scale(0.8)
+    .plus__title-text
 
 @media screen and (max-width: 480px)
     .plus__button
-        display: none
-    .plus__button_hiden
-        display: flex
+        height: 30px
+        width: 100px
 @media screen and (max-width: 320px)
     .company__description
         font-size: 10px
     .plus__text
         display: none
     .title-first-line
-        text-align: center                
+        text-align: center
     .plus__button_hiden
         width: 40px
         height: 25px
     .fa-greater-than
-        font-size: 13px    
-
+        font-size: 13px
 
 // Page 4
 
@@ -785,7 +783,7 @@ body
 .item__description
     display: flex
     flex-direction: column
-    justify-content: center    
+    justify-content: center
 
 .item_line
     margin: 0 auto
@@ -861,7 +859,7 @@ body
     flex-direction: row-reverse
     justify-content: space-between
     padding-top: 130px
-    padding-bottom: 125px
+    padding-bottom: 100px
 
 @media screen and (max-width: 900px)
     .our-product_position
@@ -881,7 +879,7 @@ body
         font-size: 30px
         padding-right: 0
     .assortment_position-two
-        flex-direction: column  
+        flex-direction: column
         align-items: center
         padding-top: 20px
         padding-bottom: 30px
@@ -893,7 +891,7 @@ body
     .items_logo
         padding-top: 15px
         margin-bottom: 25px
-        
+
     .item_line
         margin-bottom: 15px
     .items_text
@@ -904,7 +902,7 @@ body
         padding: 10px 15px
     .assortment__items
         flex-direction: column
-        margin-top: 0px 
+        margin-top: 0px
     .items__fruits
         flex-direction: row
         margin: 10px 0
@@ -912,7 +910,7 @@ body
     .items_title
         font-size: 13px
     .items_text
-        font-size: 12px            
+        font-size: 12px
     .item_line
         display: none
     .items_logo
@@ -922,29 +920,24 @@ body
         text-align: center
         font-size: 20px
     .description_text
-        font-size: 10px
-    .items_logo    
+        font-size: 12px
+    .items_logo
         height: 90px
     .description_text
-        max-width: 330px        
-
-  
-
-
+        max-width: 330px
 
 // Page 5
-
 
 .naturix
     background-color: #ffffff
     padding: 20px 0 120px 0
-   
-// Title   
+
+// Title
 
 .naturix-title
     position: relative
     display: flex
-    flex-direction: column    
+    flex-direction: column
     align-items: center
     margin: 0 0 102px 0
     padding: 0
@@ -977,10 +970,10 @@ body
     margin: 0 auto
     top: 25px
     left: 47px
-    z-index: 3 
+    z-index: 3
 
 .naturix-title__second-line
-    position: relative  
+    position: relative
     margin: 0 auto
     padding: 10px 45px
     border: solid 1px #e5e5e5
@@ -999,10 +992,10 @@ body
     justify-content: space-around
     list-style-type: none
     margin: 0 0 40px 0
-    padding: 0 210px  
-    
+    padding: 0 210px
+
 .naturix-filter strong
-    padding: 0 0 0 4px    
+    padding: 0 0 0 4px
 
 .naturix-filter__button
     display: flex
@@ -1027,7 +1020,6 @@ body
 .naturix-filter__button:active
     outline: none
 
-
 .naturix-filter__button:hover
     background: #81ba00
     color: #ffffff
@@ -1038,26 +1030,30 @@ body
 
 // Product
 
-.naturix-product 
+.naturix-product
     display: flex
-    flex-direction: column 
+    flex-direction: column
     padding: 0
-    margin: 0  
+    margin: 0
 
 .product__naturix
     display: flex
     flex-direction: row
     justify-content: center
+    flex-wrap: wrap
     align-items: center
-    margin-top: 88px
+    margin-top: 30px
     padding: 0
     list-style-type: none
+
+.margin
+    margin-bottom: 10px    
 
 @media screen and (max-width: 1150px)
     .naturix
         padding: 10px 10px
     // .naturix-title__line
-    //     display: none    
+    //     display: none
     .product__naturix
         flex-wrap: wrap
     .naturix-filter
@@ -1075,12 +1071,12 @@ body
 
 @media screen and (max-width: 550px)    
     .naturix-title__line
-        top: 65px    
+        top: 65px
     .naturix-title__second-line
         font-size: 25px
     .naturix-title__logo
         top: 16px
-        left: 28px    
+        left: 28px
 
 @media screen and (max-width: 351px)
     .naturix-title__second-line
@@ -1093,7 +1089,7 @@ body
     background-image: url(../media/5-DailyDeal/bg.png)
     background-size: cover
     background-position-x: center
-    background-position-y: bottom     
+    background-position-y: bottom
 
 .deals__top-banner
     display: flex
@@ -1141,7 +1137,7 @@ body
     background-position: center
     background-size: cover
     height: 2px
-    width: 100%   
+    width: 100%
 
 .deals__timer
     display: flex
@@ -1150,7 +1146,7 @@ body
     margin: 45px 0 48px 0
     padding: 0
 
-.timer__element      
+.timer__element
     margin: 0 5px 0 0
     padding: 5px
     background: linear-gradient(to top, #5dc5cf, #a4d2a1)
@@ -1175,7 +1171,7 @@ body
     font-size: 40px
     font-weight: 600
     color: #525252
-    
+
 .element__name
     font-family: "Roboto"
     font-size: 14px
@@ -1183,9 +1179,9 @@ body
     color: #75d1d1
 
 .sale-products
-    flex-direction: row 
-    justify-content: space-between 
-    padding: 0 0 155px 0  
+    flex-direction: row
+    justify-content: space-between
+    padding: 0 0 100px 0
 
 .sale-product__bar
     display: flex !important
@@ -1211,10 +1207,10 @@ body
     color: #81ba00
 
 .nav__basket:hover .fa-shopping-basket
-    color: #81ba00 
+    color: #81ba00
 
 .nav__open:hover .fa-arrows-alt
-    color: #81ba00        
+    color: #81ba00
 
 .nav__basket
     display: flex
@@ -1222,7 +1218,7 @@ body
     align-items: center
     margin: 0 2px 2px 0
     width: 66px
-    height: 83px    
+    height: 83px
     text-decoration: none
     background-color: #ffffff
 
@@ -1237,11 +1233,9 @@ body
     border-radius: 0 0 0 13px
     background-color: #ffffff
 
-
 .bar__description
     display: flex
     flex-direction: row
-    
 
 .description__text
     display: flex
@@ -1302,9 +1296,9 @@ body
     justify-content: center
     align-items: center
     height: 58px
-    width: 204px    
+    width: 204px
     background-color: #ffffff
-    border-radius: 0 13px 0 0     
+    border-radius: 0 13px 0 0
 
 .mark__new
     display: flex
@@ -1320,7 +1314,6 @@ body
     height: 24px
     width: 70px
     margin: 0 3px 0 0
-    
 
 .mark__sale
     display: flex
@@ -1340,16 +1333,55 @@ body
 .img__logo
     border-radius: 0 0 20px 20px
 
-.sale-products__nav
+//experiment
+
+.slick-dots
     display: flex
     flex-direction: row
     justify-content: center
-    padding: 0    
+    padding: 0
+    margin-bottom: 46px
 
-.sale-products__nav li
+.slick-dots li 
+    list-style: none    
+
+.slick-dots li button
+    display: flex
+    justify-content: center
+    align-items: center
+    list-style: none
+    width: 24px
+    height: 24px
+    margin: 0 4px
+    border: none
+    background-color: #ffffff
+    border-radius: 50px
+    font-family: "Roboto"
+    font-size: 12px
+    font-weight: 600
+    color: #c3c3c3
+    transition: 0.1s linear
+    outline: none 
+
+
+.slick-dots li.slick-active button
+    background-color: #90d3a6
+    color: #ffffff
+    outline: none    
+
+//kfmkmf
+
+.sale_products__nav
+    display: flex
+    flex-direction: row
+    justify-content: center
+    padding: 0
+    margin-bottom: 46px
+
+.sale_products__nav li
     list-style: none
 
-.sale-products__nav li button    
+.sale_products__nav li button
     display: flex
     justify-content: center
     align-items: center
@@ -1366,11 +1398,10 @@ body
     color: #c3c3c3
     transition: 0.1s linear
 
-
-.sale-products__nav li button:active
+.sale_products__nav li button:active
     outline: none
 
-.sale-products__nav li button:focus
+.sale_products__nav li button:focus
     background-color: #90d3a6
     color: #ffffff
     outline: none
@@ -1394,8 +1425,8 @@ body
     display: none
 
 .b-veget
-    margin: 6px 54px   
-    display: flex !important 
+    margin: 6px 54px
+    display: flex !important
 
 @media screen and (max-width: 1124px)
     .nav__favorites
@@ -1414,7 +1445,7 @@ body
         height: 58px
         width: 170px
     .img__logo
-        width: 170px        
+        width: 170px
 
 @media screen and (max-width: 855px)
     .text__title
@@ -1424,7 +1455,7 @@ body
     .text__price
         font-size: 12px
     .dealday
-        padding: 50px 20px        
+        padding: 50px 20px
 
 @media screen and (max-width: 760px)
     .description__text
@@ -1434,7 +1465,7 @@ body
     .img__logo
         width: 150px
     .img__mark
-       width: 150px
+        width: 150px
     .mark__new
         width: 50px
         margin: 0 3px 0 0
@@ -1442,7 +1473,6 @@ body
         width: 50px
     .sale-products__nav
         margin-bottom: 55px
-
 
 @media screen and (max-width: 652px)
     .sale-products
@@ -1452,33 +1482,33 @@ body
     .top-banner__text
         font-size: 25px
     .deals__text
-        font-size: 12px                
+        font-size: 12px
 
 @media screen and (max-width: 470px)    
-    .b-veget 
+    .b-veget
         margin: 10px 8px
     .deals__text
         display: none
     .deals__timer
-        transform: scale(0.8)        
+        transform: scale(0.8)
 
 @media screen and (max-width: 320px)      
     .b-veget
         margin: 3px 5px
     .deals__logo
         padding: 0 15px
-        width: 120px        
+        width: 120px
     .top-banner__title-secondary
         text-align: left
         font-size: 10px
     .top-banner__text
         text-align: left
         font-size: 18px
-    
+
 // Page 7
 
 .popular-product
-    padding: 10px 20px    
+    padding: 10px 20px
 
 .popular-product__logo
     display: flex
@@ -1497,32 +1527,29 @@ body
 
 .fa-star
     transform: scale(0.5)
-    color: #8dd3a5    
+    color: #8dd3a5
 
 .popular-product__category
     display: flex
     flex-direction: row
     justify-content: space-between
-    margin: 35px 0 30px 0 
+    margin: 35px 0 30px 0
     padding: 0
-
 
 .category__new-arrivals
     display: flex
     flex-direction: column
     padding: 0
     width: 380px
-       
 
 .category__new-arrivals li
     list-style: none
-
 
 .new-arrivals__title
     display: flex
     flex-direction: column
     text-decoration: none
-    margin-bottom: 30px   
+    margin-bottom: 30px
 
 .title__first-line
     font-family: "Roboto"
@@ -1536,7 +1563,7 @@ body
     flex-direction: row
     justify-content: space-between
     align-items: center
-    align-items: flex-end      
+    align-items: flex-end
 
 .second-line__title
     margin: 10px 0 0 0
@@ -1550,7 +1577,7 @@ body
     flex-direction: row
     justify-content: flex-end
     margin-bottom: 4px
-      
+
 .second-line__arrow-left1
     height: 22px
     background: #ffffff
@@ -1562,16 +1589,16 @@ body
     background-color: #ffffff
     cursor: pointer
     transition: 0.1s linear
-    z-index: 2  
+    z-index: 2
 
 .second-line__arrow-left1:focus
     outline: none
 
 .second-line__arrow-left1:active
-    outline: none    
+    outline: none
 
 .second-line__arrow-left1:hover
-    box-shadow: inset 0 0px 5px #7575752e    
+    box-shadow: inset 0 0px 5px #7575752e
 
 .second-line__arrow-right1
     height: 22px
@@ -1584,16 +1611,16 @@ body
     background-color: #ffffff
     cursor: pointer
     transition: 0.1s linear
-    z-index: 2  
+    z-index: 2
 
 .second-line__arrow-right1:focus
     outline: none
 
 .second-line__arrow-right1:active
-    outline: none    
+    outline: none
 
 .second-line__arrow-right1:hover
-    box-shadow: inset 0 0px 5px #7575752e   
+    box-shadow: inset 0 0px 5px #7575752e
 
 .second-line__arrow-left2
     height: 22px
@@ -1606,16 +1633,16 @@ body
     background-color: #ffffff
     cursor: pointer
     transition: 0.1s linear
-    z-index: 2  
+    z-index: 2
 
 .second-line__arrow-left2:focus
     outline: none
 
 .second-line__arrow-left2:active
-    outline: none    
+    outline: none
 
 .second-line__arrow-left2:hover
-    box-shadow: inset 0 0px 5px #7575752e    
+    box-shadow: inset 0 0px 5px #7575752e
 
 .second-line__arrow-right2
     height: 22px
@@ -1634,10 +1661,10 @@ body
     outline: none
 
 .second-line__arrow-right2:active
-    outline: none    
+    outline: none
 
 .second-line__arrow-right2:hover
-    box-shadow: inset 0 0px 5px #7575752e  
+    box-shadow: inset 0 0px 5px #7575752e
 
 .second-line__arrow-left3
     height: 22px
@@ -1650,16 +1677,16 @@ body
     background-color: #ffffff
     cursor: pointer
     transition: 0.1s linear
-    z-index: 2  
+    z-index: 2
 
 .second-line__arrow-left3:focus
     outline: none
 
 .second-line__arrow-left3:active
-    outline: none    
+    outline: none
 
 .second-line__arrow-left3:hover
-    box-shadow: inset 0 0px 5px #7575752e    
+    box-shadow: inset 0 0px 5px #7575752e
 
 .second-line__arrow-right3
     height: 22px
@@ -1678,10 +1705,10 @@ body
     outline: none
 
 .second-line__arrow-right3:active
-    outline: none    
+    outline: none
 
 .second-line__arrow-right3:hover
-    box-shadow: inset 0 0px 5px #7575752e  
+    box-shadow: inset 0 0px 5px #7575752e
 
 .second-line__arrow-left
     height: 22px
@@ -1694,13 +1721,13 @@ body
     background-color: #ffffff
     cursor: pointer
     transition: 0.1s linear
-    z-index: 2    
+    z-index: 2
 
 .second-line__arrow-left:focus
     outline: none
 
 .second-line__arrow-left:active
-    outline: none    
+    outline: none
 
 .second-line__arrow-left:hover
     box-shadow: inset 0 0px 5px #7575752e
@@ -1716,10 +1743,10 @@ body
     background-color: #ffffff
     cursor: pointer
     transition: 0.1s linear
-    z-index: 2      
+    z-index: 2
 
 .second-line__arrow-right:active
-    outline: none   
+    outline: none
 
 .second-line__arrow-right:focus
     outline: none
@@ -1737,7 +1764,7 @@ body
     margin-bottom: 30px
     height: 120px
     width: 370px
-    transition: 0.3s linear  
+    transition: 0.3s linear
 
 .new-arrivals__element:hover
     transform: scale(1.1)
@@ -1745,19 +1772,18 @@ body
 
 .new-arrivals__element:hover .new-arrivals__img
     transform: scale(1)
-    filter: drop-shadow(0px 10px 5px #a5a5a5)        
+    filter: drop-shadow(0px 10px 5px #a5a5a5)
 
 .new-arrivals__img
     height: 100px
     padding: 10px
-    transition: 0.3s linear  
+    transition: 0.3s linear
 
 .new-arrivals__brief
     display: flex
     flex-direction: column
     justify-content: space-between
     padding: 25px 35px 25px 15px
-    
 
 .brief__title
     margin: 0
@@ -1771,7 +1797,7 @@ body
     padding: 0
     height: 2px
     width: 25px
-    background-color: #eeeeee    
+    background-color: #eeeeee
 
 .brief__price
     font-family: "Roboto"
@@ -1785,14 +1811,14 @@ body
     justify-content: space-between
     padding: 0
     margin: 0
-    padding-bottom: 127px
+    padding-bottom: 60px
 
 .banners__one
     position: relative
     list-style: none
 
 .banners_img
-    display: block    
+    display: block
 
 .banner__button
     position: absolute
@@ -1831,14 +1857,14 @@ body
     transform: scale(1.2)
 
 .review1
-    padding-inline-start: 0px    
+    padding-inline-start: 0px
 
-.slick-slide 
-    display: block    
+.slick-slide
+    display: block
     padding-inline-start: 0px
 
 .item
-    padding-inline-start: 0px    
+    padding-inline-start: 0px
 
 .slick-slider
     padding-inline-start: 0px
@@ -1848,50 +1874,50 @@ body
         flex-wrap: wrap
         justify-content: center
     .category__new-arrivals
-        width: 315px
-        margin: 0 10px        
-    .new-arrivals__element 
-        width: 325px           
-@media screen and (max-width: 1029px) 
+        width: 330px
+        margin: 0 10px
+    .new-arrivals__element
+        width: 325px
+@media screen and (max-width: 1075px) 
     .popular-product__category
         justify-content: center
     .second-line__title
         font-size: 24px
     .category3__hidden
         display: none
-    .new-arrivals__element 
+    .new-arrivals__element
         width: 270px
     .category__new-arrivals
-        width: 280px              
+        width: 280px
 @media screen and (max-width: 630px) 
     .second-line__title
         font-size: 20px
     .new-arrivals__brief
         padding: 12px 8px 11px 0px
     .banners
-        padding-bottom: 55px        
+        padding-bottom: 5px
 @media screen and (max-width: 598px)    
-    .img_banner   
+    .img_banner
         width: 400px
     .banner__button
         top: 160px
-        left: 55px 
+        left: 55px
     .banner__button_color
         top: 160px
         left: 55px
-    .second-line__title 
+    .second-line__title
         font-size: 16px
 @media screen and (max-width: 571px)
     .brief__title
         font-size: 14px
-    .new-arrivals__element 
+    .new-arrivals__element
         width: 230px
     .category__new-arrivals
-        width: 240px                     
+        width: 240px
 @media screen and (max-width: 500px)
     .img_logo
-        width: 125px    
-    .img_banner        
+        width: 125px
+    .img_banner
         width: 300px
     .category2__hidden
         display: none
@@ -1908,19 +1934,16 @@ body
         padding: 5px 22px
         border: solid 3px #ffffff
 @media screen and (max-width: 320px)
-    .img_banner   
-        width: 300px    
-
-
+    .img_banner
+        width: 300px
 
 // Page 8
 
 .reviews
-    background-image: url(../media/8/bg.png)    
-    background-repeat: no-repeat    
-    padding: 10px 15px 138px 15px
+    background-image: url(../media/8/bg.png)
+    background-repeat: no-repeat
+    padding: 10px 15px 100px 15px
     background-size: contain
-     
 
     // Form
 
@@ -1952,36 +1975,37 @@ body
     color: #525252
 
 .form__email
-    padding: 19px 345px 19px 42px
-    background-color: #ffffff 
+    width: 510px
+    padding: 19px 10px 19px 42px
+    background-color: #ffffff
     font-family: "Roboto"
     font-size: 15px
     font-weight: 400
     color: #cccccc
     border-radius: 50px
-    border: none  
+    border: none
 
 .form__email:active
     outline: none
 
 .form__email:focus
-    outline: none    
+    outline: none
 
 .form__subscribe
     padding: 17px 47px 17px 47px
-    background-color: #7cc000 
+    background-color: #7cc000
     font-family: "Roboto"
     font-size: 18px
     font-weight: 400
     color: #ffffff
     border-radius: 50px
-    border: none  
+    border: none
 
 .form__subscribe:active
     outline: none
 
 .form__subscribe:focus
-    outline: none    
+    outline: none
     // Reviews
 
 .comment
@@ -1995,7 +2019,7 @@ body
     padding-bottom: 25px
 
 .comment li
-    list-style: none    
+    list-style: none
 
 .comment__first
     display: flex
@@ -2043,14 +2067,14 @@ body
     display: flex
     flex-direction: column
     align-items: center
-       
+    margin: 40px 0 0 0
 
 .blog-title__first-line
-    margin: 75px 0 0 0
+    margin: 0
     padding: 0
     font-family: "Roboto"
     font-size: 12px
-    font-weight: 500    
+    font-weight: 500
     letter-spacing: 0.4em
     text-transform: uppercase
     color: #525252
@@ -2060,7 +2084,7 @@ body
     padding: 0
     font-family: "Roboto"
     font-size: 35px
-    font-weight: 300    
+    font-weight: 300
     color: #525252
 
     // Blog post
@@ -2069,7 +2093,7 @@ body
     display: flex
     flex-direction: row
     justify-content: space-between
-    margin: 83px 0 0 0
+    margin: 60px 0 0 0
     padding: 15px
 
 .post
@@ -2086,9 +2110,9 @@ body
 
 .post__photo
     display: block
-    width: 240px  
-    height: 220px 
-    border-radius: 10px             
+    width: 240px
+    height: 220px
+    border-radius: 10px
 
 .post__photo-before::before
     content: ""
@@ -2097,7 +2121,7 @@ body
     right: 20px
     border: 1px solid #eeeeee
     border-radius: 10px
-    width: 240px    
+    width: 240px
     height: 220px
     z-index: -1
 
@@ -2112,7 +2136,7 @@ body
     margin: 0
     font-family: "Roboto"
     font-size: 10px
-    font-weight: 500    
+    font-weight: 500
     color: #9f9f9f
     text-transform: uppercase
 
@@ -2121,13 +2145,13 @@ body
     padding: 0
     font-family: "Roboto"
     font-size: 22px
-    font-weight: 300    
+    font-weight: 300
     color: #525252
 
 .post__teg
     font-family: "Roboto"
     font-size: 22px
-    font-weight: 600    
+    font-weight: 600
     color: #525252
 
 .post__line
@@ -2143,30 +2167,32 @@ body
     max-width: 265px
     font-family: "Roboto"
     font-size: 14px
-    font-weight: 400    
+    font-weight: 400
     color: #525252
     line-height: 1.9em
 
-.post__link     
+.post__link
     font-family: "Roboto"
     font-size: 13px
-    font-weight: 500    
+    font-weight: 500
     color: #999999
     text-transform: uppercase
     text-decoration: none
     transition: 0.2s linear
-    
+
 .post__link:hover
     color: #84c400
 
-.reviews__form   
-    display: flex   
+.reviews__form
+    display: flex
 
 @media screen and (max-width: 1170px)
     .reviews
         background-size: initial
 
 @media screen and (max-width: 934px)
+    .reviews
+        padding: 10px 15px 70px 15px
     .reviews__subscribe
         flex-direction: column
         align-items: center
@@ -2175,8 +2201,9 @@ body
     .title__first
         display: none
     .form__email
-        margin: 0 4px 0 0 
-    .comment__photo 
+        width: 485px
+        margin: 0 4px 0 0
+    .comment__photo
         padding: 15px
         height: 91px
     .post__photo
@@ -2186,7 +2213,7 @@ body
         width: 200px
         height: 200px
         bottom: 10px
-        right: 10px                                
+        right: 10px
 @media screen and (max-width: 850px)
     .blog-title__first-line
         margin: 25px 0 0 0
@@ -2196,21 +2223,21 @@ body
         align-items: center
         margin: 30px 0 0 0
     .post
-        margin: 10px 0    
+        margin: 10px 0
 @media screen and (max-width: 736px)
     .reviews
-        padding-bottom: 90px
+        padding-bottom: 40px
     .comment__text
         display: none
     .title__second
         font-size: 25px
     .form__email
-        padding: 8px 204px 8px 29px
-        font-size: 12px    
+        width: 321px
+        font-size: 12px
     .form__subscribe
         padding: 8px 25px 8px 25px
         font-size: 12px
-    .comment__first 
+    .comment__first
         display: flex
         flex-direction: column
         align-items: center
@@ -2219,14 +2246,14 @@ body
     .comment__author
         padding: 0
     .comment
-        padding-top: 50px    
+        padding-top: 35px
 
-@media screen and (max-width: 497px)
+@media screen and (max-width: 497px)    
     .reviews__form
         flex-direction: column
         align-items: center
     .form__subscribe
-        margin: 10px 0        
+        margin: 10px 0
     .post__photo
         width: 180px
         height: 180px
@@ -2234,20 +2261,22 @@ body
         bottom: 15px
         right: 5px
         width: 180px
-        height: 180px   
+        height: 180px
     .post__description
         margin: 0 0 0 23px
     .post__date
         margin: 0 0 5px 0
-    .post__title 
+    .post__title
         margin: 0 0 5px 0
-    .post__line 
-        margin: 5px 0      
+    .post__line
+        margin: 5px 0
     .post__link
-        margin-top: 5px              
-@media screen and (max-width: 405px) 
+        margin-top: 5px
+@media screen and (max-width: 405px)
+    .reviews
+        padding-bottom: 15px
     .form__email
-        padding: 8px 78px 8px 29px
+        width: 230px
     .post__photo
         width: 100px
         height: 100px
@@ -2271,19 +2300,16 @@ body
     .post__line
         margin-bottom: 4px
 
-
-                     
 /* Footer */
 
-.footer 
+.footer
     background-image: url(../media/Footer/bg.jpg)
     background-size: cover
     background-position-x: center
     background-position-y: top
     padding: 125px 0 0 0
-    
 
-.footer__main 
+.footer__main
     display: flex
     flex-direction: row
     justify-content: space-between
@@ -2291,13 +2317,11 @@ body
     margin: 0
     padding: 0
     padding-left: 10px
-    
 
-.footer__main li 
+.footer__main li
     list-style: none
 
-
-.footer__contact 
+.footer__contact
     display: flex
     flex-direction: column
     justify-content: flex-start
@@ -2307,7 +2331,7 @@ body
     padding-left: 10px
 
 .footer__line_mode
-    margin: 48px 0 0 0 
+    margin: 48px 0 0 0
     padding: 0
     height: 2px
     width: 30px
@@ -2320,7 +2344,7 @@ body
     width: 30px
     background-color: #7ac200
 
-.contact__description 
+.contact__description
     max-width: 330px
     padding: 0
     margin: 34px 0 28px 0
@@ -2362,7 +2386,7 @@ body
     font-weight: 400
     color: #525252
 
-.footer__information 
+.footer__information
     display: flex
     flex-direction: column
     padding: 0
@@ -2375,14 +2399,14 @@ body
     color: #525252
 
 .information__title
-    padding: 0    
+    padding: 0
 
-.footer__instagram 
+.footer__instagram
     display: flex
     flex-direction: column
     padding: 0
 
-.instagram__title    
+.instagram__title
     display: flex
     flex-direction: column
     padding: 0
@@ -2391,10 +2415,9 @@ body
     padding: 0
 
 .category__item
-    padding: 0px 0 10px 0   
-      
+    padding: 0px 0 10px 0
 
-.instagram__images 
+.instagram__images
     display: flex
     flex-direction: column
     padding: 0
@@ -2411,16 +2434,15 @@ body
 .images__second-line
     display: flex
     flex-direction: row
-    padding: 0    
+    padding: 0
 
 .img__link:hover .instagram__img
     transform: scale(0.9)
 
 .fa-arrow-alt-circle-right
     transform: scale(0.7)
-    color: #525252 
+    color: #525252
     transition: 0.2s linear
-
 
 .category__name
     font-family: "Roboto"
@@ -2438,27 +2460,25 @@ body
 .category__item:hover .fa-arrow-alt-circle-right
     transform: scale(0.8)
 
-
-.contact__category 
+.contact__category
     display: flex
     flex-direction: row
     padding: 0 0 10px 0
 
-
-.fa-map-marker-alt 
+.fa-map-marker-alt
     color: #525252
 
-.fa-envelope-square 
+.fa-envelope-square
     color: #525252
 
-.fa-phone-square-alt 
+.fa-phone-square-alt
     color: #525252
 
 .footer__secondary
     display: flex
     flex-direction: row
     justify-content: space-between
-    margin: 190px 0 40px 0    
+    margin: 190px 0 40px 0
     list-style: none
 
 .secodary__rights
@@ -2467,7 +2487,7 @@ body
     font-weight: 400
     color: #999999
     padding: 0
-    margin: 0
+    margin: 0 0 5px 0
 
 .secondary__documents
     display: flex
@@ -2486,12 +2506,12 @@ body
     font-weight: 500
     color: #999999
     text-decoration: none
-    transition: 0.1s linear 
-           
-.documents__a:hover
-    color: #545454    
+    transition: 0.1s linear
 
-.documents__circle    
+.documents__a:hover
+    color: #545454
+
+.documents__circle
     margin: 0 auto
     margin-top: 11px
     width: 6px
@@ -2502,14 +2522,13 @@ body
     opacity: 0
     transition: 0.2s linear
 
-.documents__a:hover ~ .documents__circle    
+.documents__a:hover ~ .documents__circle
     visibility: visible
     opacity: 1
 
-
 @media screen and (max-width: 827px)
     .footer
-        padding: 40px 0 0 0     
+        padding: 40px 0 0 0
     .title__head
         font-size: 14px
     .footer__line
@@ -2523,16 +2542,21 @@ body
     .footer__line_mode
         margin: 39px 0 0 0
     .documents__a
-        font-size: 10px
+        font-size: 13px
+    .footer__main
+        padding-bottom: 65px
     .footer__secondary
         flex-direction: column
         justify-content: center
         align-items: center
-        margin: 50px 0 3px 0
+        margin: 3px 0 3px 0
         padding: 0
     .secondary__documents
         padding: 0
         margin-top: 5px
 @media screen and (max-width: 514px)
     .footer__information
-        display: none                                              
+        display: none
+@media screen and (max-width: 405px)
+    .documents__a
+        font-size: 11px
